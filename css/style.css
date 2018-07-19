@@ -1,7 +1,15 @@
-
 body, html {
   margin: 0px;
 }
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgb(126, 126, 126);
+  z-index: 1;
+}
+
 .navbar {
   display: flex;
   position: relative;
@@ -17,13 +25,14 @@ body, html {
 #nav-logo {
   max-width: 40px;
 }
+
 .navbar-item {
   margin: 0px 20px 0px 20px;
 }
 
 .navbar-item-logo {
   position: absolute;
-  left: 20px;
+  left: 30px;
   top: 4px;
 }
 
@@ -33,6 +42,7 @@ body, html {
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 .navbar-heading:hover {
@@ -41,8 +51,8 @@ body, html {
 
 .bio-box {
   background-color: rgb(71, 178, 255);
-  z-index:-1;
-  padding: 30px 40px 30px 40px;
+  z-index: -1;
+  padding: 100px 100px 100px 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -52,16 +62,26 @@ body, html {
   width: 50%
 }
 
+#resume-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+#resume-link:hover {
+  color: rgb(71, 178, 255);
+}
+
 #resume-button {
   border: 2px solid white;
   border-radius: 10px;
   width: 200px;
   text-align: center;
-  margin: auto;
+  margin-left: 20%;
   margin-top: 50px;
   font-family: 'Fira Sans', sans-serif;
   color: white;
-  transition: color 0.3s, background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 #resume-button:hover {
@@ -69,12 +89,17 @@ body, html {
   background-color: white;
 }
 
+#see-resume {
+  margin: 0px;
+  padding: 15px 25px 15px 25px;
+}
+
 #bio-intro {
   color: white;
   margin: 0px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 100px;
 }
 
 #bio-description {
@@ -82,13 +107,14 @@ body, html {
   margin-top: 10px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 40px;
 }
+
 #bio-text {
   color: white;
   margin-top: 10px;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -98,10 +124,28 @@ body, html {
   text-align: center;
 }
 
-#justin-pic {
+/* #justin-pic {
   width: 300px;
   box-shadow: 0 0px 10px rgb(255, 255, 255);
   margin-left: 20px;
+} */
+
+/* Contact Me */
+
+.contact-link {
+  padding: 40px 50px 20px 50px;
+  text-align: center;
+}
+
+.contact-icon {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.contact-icon:hover {
+  color: #d7d7d7;
 }
 
 .title-wrapper {
@@ -125,10 +169,17 @@ body, html {
   z-index: -1;
 }
 
+.about-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .about {
+  max-width: 50%;
   display: flex;
   justify-content: space-around;
   padding: 20px 80px 20px 80px;
+  max-width: 50%;
 }
 
 #about-image {
@@ -147,12 +198,258 @@ body, html {
   width: 300px;
 }
 
+.skills {
+  width: 50%;
+}
+
+.skill-title {
+  color: #616161;
+  margin: 20px 40px 20px 0px;
+  padding-left: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.skill {
+  background-color: rgb(71, 178, 255);
+  color: white;
+  padding: 15px;
+  margin: 10px 10px 10px 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 30px;
+  max-width: 80px;
+  text-align: center;
+}
+
 /* Portfolio */
 
-#highlights {
+.project-section {
+  width: 100%;
+}
+
+.project-wrapper {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.large-project-card {
+  background-color: #f0f0f0;
+  padding: 50px 50px 50px 50px;
+  width: 70%;
+  margin: 50px 0px 50px 0px;
+}
+
+.project-background#left {
+  width: 75%;
+  height: 100%;
+  background-color: rgb(71, 178, 255);
+  z-index: -1;
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+
+.project-background#right {
+  width: 75%;
+  height: 100%;
+  background-color: rgb(71, 178, 255);
+  z-index: -1;
+  position: absolute;
+  top: 50px;
+  left: 165px;
+}
+
+#left-project {
+  margin-left: 10%;
+}
+
+#right-project {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title {
   color: #616161;
   margin: 0px;
-  font-family: 'Permanent Marker', sans-serif;
-  font-size: 40px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.project-role {
+  color: #616161;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.keys-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.key {
+  padding: 10px 15px 10px 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
   text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+/* Project Keys */
+
+#ux {
+  background-color: rgb(16, 127, 224);
+}
+
+#ui {
+  background-color: rgb(169, 27, 255);
+}
+
+#react {
+  background-color: rgb(0, 192, 195);
+}
+
+#js {
+  background-color: rgb(27, 175, 0);
+}
+
+#sketch-figma {
+  background-color: rgb(247, 35, 35);
+}
+
+#illustrator {
+  background-color: rgb(72, 46, 232);
+}
+
+#research {
+  background-color: rgb(205, 1, 1);
+}
+
+#prototyping {
+  background-color: rgb(254, 45, 255);
+}
+
+.project-card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.project-description {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  width: 50%;
+}
+
+.project-link {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: rgb(47, 47, 47);
+}
+
+/* Other projects */
+
+.other-projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0px 150px 0px 125px;
+}
+
+.small-text-wrapper {
+  transition: opacity 0.5s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.small-text-wrapper:hover {
+  opacity: 1;
+}
+
+.small-text {
+  transform: translate(0%, 50%);
+}
+
+.small-project-card {
+  background-color: #f0f0f0;
+  margin: 0px 25px 25px 50px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
+.small-title {
+  color: #616161;
+  margin: 0px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.small-role {
+  color: #616161;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#small-keys-list {
+  justify-content: flex-start;
+}
+
+.small-key {
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+.small-product-description {
+  color: #616161;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  max-height: 100px;
+  overflow: hidden;
 }

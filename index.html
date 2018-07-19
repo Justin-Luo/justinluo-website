@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Justin Luo</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navigation bar -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Justin Luo</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/f1cdcabfb0.js"></script>
+
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav>
     <div>
       <ul class="navbar">
         <li class="navbar-item-logo">
-          <a href="index.html" class="navbar-heading">
-          <img id="nav-logo" src="./img/logo.png" alt="logo">
-          </a>
+          <a id="main-logo" class="navbar-heading" cursor="pointer">
+            <img id="nav-logo" src="./img/logo.png" alt="logo">
+            </a>
         </li>
-        <li class="navbar-item"><a href="index.html" class="navbar-heading">ABOUT</a></li>
-        <li class="navbar-item"><a href="work.html" class="navbar-heading">PORTFOLIO</a></li>
-        <li class="navbar-item"><a href="adventures.html" class="navbar-heading">ADVENTURES</a></li>
+        <li class="navbar-item">
+          <a id="about" class="navbar-heading">ABOUT</a>
+        </li>
+        <li class="navbar-item">
+          <a id="portfolio" class="navbar-heading">PORTFOLIO</a>
+        </li>
+        <li class="navbar-item">
+          <a id="adventure" class="navbar-heading">ADVENTURES</a>
+        </li>
       </ul>
     </div>
+  </nav>
 
-    <!-- Bio -->
-    <div class="bio-box">
-      <div class="bio-text">
-        <h1 id="bio-intro">JUSTIN LUO</h1>
-        <h2 id="bio-description">DESIGNER | DEVELOPER</h2>
-        <p id="bio-text">I am fascinated by the intersection between design and technology. By creating intuitive and beautiful solutions, I aim to create delightful user experiences through technology.</p>
-        <div id="resume-button">
-          <p>See Resume</p>
-        </div>
+  <!-- Bio -->
+  <div class="bio-box">
+    <div class="bio-text">
+      <h1 id="bio-intro">JUSTIN LUO</h1>
+      <h2 id="bio-description">DESIGNER | DEVELOPER</h2>
+      <p id="bio-text">I am fascinated by the intersection between design and technology. By creating intuitive and beautiful solutions, I aim to create delightful user experiences through technology.</p>
+      <div id="resume-button">
+        <a id="resume-link" href="./pages/Justin-Luo-Resume.pdf" target="_blank">
+          <p id="see-resume">See Resume</p>
+        </a>
       </div>
-      <div class="bio-pic">
+    </div>
+
+
+    <div class="contact-wrapper">
+      <div class="contact-link">
+        <a class="contact-icon" href="mailto:justinluo973@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+      </div>
+      <!-- <div class="contact-link">
+          <a class="contact-icon" href="mailto:justinluo973@gmail.com">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+        </div> -->
+      <div class="contact-link">
+        <a class="contact-icon" target="_blank" href="https://www.linkedin.com/in/justin-luo-75a12012a/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+      </div>
+      <div class="contact-link">
+        <a class="contact-icon" target="_blank" href="https://github.com/Justin-Luo">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </a>
+      </div>
+    </div>
+    <!-- <div class="bio-pic">
         <img id="justin-pic" src="./img/justin.jpg" alt="justin">
-      </div>
-    </div>
+      </div> -->
+  </div>
 
-    <!-- About Me -->
-    <div>
-    <div class="title-wrapper">
-      <h1 class="section-title">About Me</h1>
-      <img class="section-number" src="./img/1.png" alt="1">
-    </div>
+  <!-- About Me -->
+  <div id="about-section" class="title-wrapper">
+    <h1 class="section-title">About Me</h1>
+    <img class="section-number" src="./img/1.png" alt="1">
+  </div>
+
+  <div class="about-wrapper">
     <div class="about">
       <div id="about-image">
         <img id="about-outdoor" src="./img/outdoor.png" alt="outdoor">
@@ -51,98 +91,267 @@
         <p>On campus, I’m involved in Sigma Phi Epsilon, DALI Lab, and the Cabin and Trail club. In my free time, I love to go hike, rock climb, and play tennis.</p>
       </div>
     </div>
-    </div>
-
-    <h2>Designer</h2>
-      <div>
-        <p>User Interface</p>
-        <p>User Experience</p>
-        <p>Design Thinking</p>
-        <p>Product Design</p>
-        <p>User Research</p>
+    <div class="skills">
+      <h2 class="skill-title">Designer</h2>
+      <div class="skill-list">
+        <p class="skill">UI/UX</p>
+        <p class="skill">User Research</p>
+        <p class="skill">Design Thinking</p>
+        <p class="skill">Product Design</p>
       </div>
-    <h2>Developer</h2>
-    <div>
-      <h2>Languages</h2>
-      <p>Python</p>
-      <p>JS</p>
-      <p>Java</p>
-      <p>C</p>
-      <p>Full Stack Web Development</p>
+      <h2 class="skill-title">Developer</h2>
+      <div class="skill-list">
+        <p class="skill">Python</p>
+        <p class="skill">JS</p>
+        <p class="skill">Java</p>
+        <p class="skill">C</p>
+        <p class="skill">Full=Stack Web Dev</p>
+      </div>
     </div>
+  </div>
 
 
-  <div>
-  <div class="title-wrapper">
+  <div class="title-wrapper" id="portfolio-section">
     <h1 class="section-title">Portfolio</h1>
     <img class="section-number" src="./img/2.png" alt="2">
   </div>
 
-  <div class="large-project-card">
-    <div class="project-card-header">
-      <div class="project-name">
-      <h2>Left On Read</h2>
-      <h3>Lead Designer | Front End Developer</h3>
-      <div class="project-keys">
-        <ul class="keys-list">
-          <li class="key" id="ux">UX</li>
-          <li class="key" id="ui">UI</li>
-          <li class="key" id="React">React</li>
-          <li class="key" id="Redux">Redux</li>
-          <li class="key" id="JS">JS</li>
-        </ul>
+
+  <!-- Left on Read -->
+  <div class="project-wrapper" id="left-project">
+    <div class="project-background" id="left">
     </div>
-    <div class="porject-card-content">
-      <p> Left On Read is a website that allows users to view analytics about
-         their Messages conversations on macOS devices. Left On Read started as
-         a final group project for my Full Stack Web Development class.</p>
+    <div class="large-project-card" id="left-section">
+      <div class="project-card-header">
+        <div class="project-name">
+          <h2 class="project-title">Left On Read</h2>
+          <h3 class="project-role">Lead Designer | Front-End Developer</h3>
+        </div>
+        <div class="project-keys">
+          <ul class="keys-list">
+            <li class="key" id="ui">UI</li>
+            <li class="key" id="ux">UX</li>
+            <li class="key" id="react">React/Redux</li>
+            <li class="key" id="js">JS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-card-content">
+        <div class="project-description">
+          <p> "Analyze your texts. Explore the data. See who your friends are."</p>
+          <p> Left On Read allows users to analyze their Messages conversations on macOS devices. </p>
+          <!-- <p> Left On Read is a website that allows users to view analytics about their Messages conversations on macOS devices. Left On Read started as a final group project for my Full Stack Web Development class.</p> -->
+          <a class="project-link" href="./pages/lor.html">
+            <p>See the process
+            </p>
+          </a>
+        </div>
+        <div class="project-photo">
+          <img id="about-outdoor" src="./img/outdoor.png" />
+        </div>
+      </div>
     </div>
   </div>
 
-    <div>
-      <h2>Unmasked</h2>
+  <!-- Unmasked -->
+  <div class="project-wrapper" id="right-section">
+    <div class="project-background" id="right">
     </div>
-    <div>
-      <h2>STIC</h2>
+    <div class="large-project-card" id="right-project">
+      <div class="project-card-header">
+        <div class="project-name">
+          <h2 class="project-title">Unmasked</h2>
+          <h3 class="project-role">UI/UX Designer</h3>
+        </div>
+        <div class="project-keys">
+          <ul class="keys-list">
+            <li class="key" id="ui">UI</li>
+            <li class="key" id="ux">UX</li>
+            <li class="key" id="illustrator">Illustrator</li>
+            <li class="key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-card-content">
+        <div class="project-description">
+          <p class="tagline"> "How might we create a annonymous community to discuss mental health issues at Dartmouth? "</p>
+          <p> Dartmouth Unmasked is a mobile application that allows Dartmouth students to annonymously discuss mental health and other personal issues.</p>
+          <a class="project-link" href="./pages/unmasked.html">
+            <p>See the process</p>
+          </a>
+        </div>
+        <div class="project-photo">
+          <img id="about-outdoor" src="./img/outdoor.png" />
+        </div>
+      </div>
     </div>
+  </div>
 
-    <h1>Other Projects</h1>
-    <div>
-      <h2>React Blog</h2>
+  <!-- STIC -->
+  <div class="project-wrapper" id="left-project">
+    <div class="project-background" id="left">
     </div>
-    <div>
-      <h2>Crunch</h2>
+    <div class="large-project-card" id="left">
+      <div class="project-card-header">
+        <div class="project-name">
+          <h2 class="project-title">STIC</h2>
+          <h3 class="project-role">Product Designer | Marketing Lead </h3>
+        </div>
+        <div class="project-keys">
+          <ul class="keys-list">
+            <li class="key" id="illustrator">Illustrator</li>
+            <li class="key" id="research">User Research</li>
+            <li class="key" id="prototyping">Prototyping</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-card-content">
+        <div class="project-description">
+          <p class="tagline">"Maximize classroom learning through student feedback"</p>
+          <p> Student and Teachers in Collaboration (STIC) is a proposed solution to maximize student learning through an immediate feedback channel.</p>
+          <a class="project-link" href="./pages/stic.html">
+            <p>See the process</p>
+          </a>
+        </div>
+        <div class="project-photo">
+          <img id="about-outdoor" src="./img/outdoor.png" />
+        </div>
+      </div>
     </div>
-    <div>
-      <h2>Handout Pocket</h2>
-    </div>
-    <div>
-      <h2>Team4Tech</h2>
-    </div>
-    <div>
-      <h2>Making It Stick</h2>
-    </div>
-    <div>
-      <h2>Design Thinking</h2>
-    </div>
-    <div>
-      <h2>Maze Solver</h2>
-    </div>
+  </div>
 
-    <div>
-    <div class="title-wrapper">
-      <h1 class="section-title">Contact</h1>
-      <img class="section-number" src="./img/3.png" alt="3">
+  <div class="other-projects">
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+        <div class="small-text">
+          <h2 class="small-title">React Blog</h2>
+          <h2 class="small-role">Development Project</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Crunch</h2>
+          <h2 class="small-role">Product Designer</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Handout Pocket</h2>
+          <h2 class="small-role">Product Designer</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Team4Tech</h2>
+          <h2 class="small-role">Marketing Intern</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Seabird Apps</h2>
+          <h2 class="small-role">Animation and Marketing</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Making It Stick</h2>
+          <h2 class="small-role">UI/UX Designer</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Design Thinking</h2>
+          <h2 class="small-role">Teaching Assistant</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-project-card">
+      <div class="small-text-wrapper">
+
+        <div class="small-text">
+          <h2 class="small-title">Maze Solver</h2>
+          <h2 class="small-role">Development Project</h2>
+          <ul class="keys-list" id="small-keys-list">
+            <li class="small-key" id="ux">UX</li>
+            <li class="small-key" id="ui">UI</li>
+            <li class="small-key" id="illustrator">Illustrator</li>
+            <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <div>
+
+  <div>
     <div class="title-wrapper">
       <h1 class="section-title">Adventures</h1>
-      <img class="section-number" src="./img/4.png" alt="4">
+      <img class="section-number" src="./img/3.png" alt="4">
     </div>
+  </div>
 
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
 
-
-  </body>
 </html>

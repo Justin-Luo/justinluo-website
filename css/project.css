@@ -1,0 +1,115 @@
+.page-header {
+  background-color: rgb(71, 178, 255);
+  padding: 20px;
+}
+
+.page-back {
+  text-decoration: none;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.page-title {
+  color: white;
+  margin: 0px;
+  margin-top: 20px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 125px;
+  text-align: center;
+}
+
+.page-role {
+  color: white;
+  margin: 0px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+}
+
+.page-tagline {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+  padding-top: 20px;
+}
+
+#button {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#button:hover {
+  color: rgb(71, 178, 255);
+  background-color: white;
+}
+
+.page-quote-background {
+  background-color: rgb(71, 178, 255);
+  padding: 50px;
+  margin: 50px 75px 50px 75px;
+}
+
+.page-large-quote {
+  color: white;
+  margin: auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: left;
+  max-width: 75%;
+}
+
+.page-quote-author {
+  color: white;
+  margin: 0px;
+  margin-top: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: right;
+  margin-right: 15%;
+}
+
+.page-normal-text {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 50px 150px 50px 150px;
+}
+
+.page-small-title {
+  color: #323232;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 50px 150px 50px 150px;
+}
+
+.page-list {
+  margin: 50px 150px 50px 150px;
+  list-style: disc;
+}
+
+.page-list-item {
+  color: #323232;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
