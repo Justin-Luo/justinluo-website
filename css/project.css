@@ -3,6 +3,10 @@
   padding: 20px;
 }
 
+.page-body {
+  margin: 0 10% 0 10%;
+}
+
 .page-back {
   text-decoration: none;
   color: white;
@@ -10,6 +14,11 @@
   font-weight: 400;
   font-size: 20px;
   padding-top: 50px;
+  transition: color 0.3s;
+}
+
+.page-back:hover {
+  color: rgb(232, 232, 232);
 }
 
 .page-title {

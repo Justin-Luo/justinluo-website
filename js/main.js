@@ -21,9 +21,3 @@ $("#portfolio").click(function() {
     },
     'slow');
 });
-
-
-
-
-
-// });
