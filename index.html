@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Justin Luo</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/micromodal.css">
+
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker"
     rel="stylesheet">
   <script src="https://use.fontawesome.com/f1cdcabfb0.js"></script>
@@ -33,6 +35,8 @@
       </ul>
     </div>
   </nav>
+
+
 
   <!-- Bio -->
   <div class="bio-box">
@@ -75,6 +79,8 @@
         <img id="justin-pic" src="./img/justin.jpg" alt="justin">
       </div> -->
   </div>
+
+
 
   <!-- About Me -->
   <div id="about-section" class="title-wrapper">
@@ -212,7 +218,7 @@
     </div>
 
     <div class="other-projects">
-      <div class="small-project-card" style="background-image: url(./img/reactblog-icon.png)">
+      <div class="small-project-card" style="background-image: url(./img/reactblog-icon.png)" data-micromodal-trigger="react-blog-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -220,17 +226,15 @@
             <h2 class="small-title">React Blog</h2>
             <h2 class="small-role">Development Project</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
-              <li class="small-key" id="illustrator">ILLUSTRATOR</li>
-              <li class="small-key" id="sketch-figma">SKETCH</li>
+              <li class="small-key" id="react">REACT/REDUX</li>
+
             </ul>
           </div>
         </div>
       </div>
 
 
-      <div class="small-project-card" style="background-image: url(./img/crunch-logo.png)">
+      <div class="small-project-card" style="background-image: url(./img/crunch-logo.png)" data-micromodal-trigger="crunch-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -239,15 +243,14 @@
             <h2 class="small-title">Crunch</h2>
             <h2 class="small-role">Product Designer</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
+              <li class="small-key" id="product">Product Design</li>
               <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+              <li class="small-key" id="after-effects">After Effects</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="small-project-card" style="background-image: url(./img/handoutpocket-logo.png)">
+      <div class="small-project-card" style="background-image: url(./img/handoutpocket-logo.png)" data-micromodal-trigger="handout-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -256,15 +259,13 @@
             <h2 class="small-title">Handout Pocket</h2>
             <h2 class="small-role">Product Designer</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
+              <li class="small-key" id="product">Product Design</li>
               <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="small-project-card" style="background-image: url(./img/team4tech-logo.png)">
+      <div class="small-project-card" style="background-image: url(./img/team4tech-logo.png)" data-micromodal-trigger="team4tech-modal">
         <div class="background-overlay">
         </div>
 
@@ -274,15 +275,13 @@
             <h2 class="small-title">Team4Tech</h2>
             <h2 class="small-role">Marketing Intern</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
+              <li class="small-key" id="marketing">Marketing</li>
               <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="small-project-card" style="background-image: url(./img/seabird-logo.png)">
+      <div class="small-project-card" style="background-image: url(./img/seabird-logo.png)" data-micromodal-trigger="seabird-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -291,15 +290,13 @@
             <h2 class="small-title">Seabird Apps</h2>
             <h2 class="small-role">Animation and Marketing</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
               <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+              <li class="small-key" id="after-effects">After Effects</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="small-project-card" style="background-image: url(./img/making-logo.png)">
+      <div class="small-project-card" style="background-image: url(./img/making-logo.png)" data-micromodal-trigger="making-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -311,37 +308,35 @@
               <li class="small-key" id="ux">UX</li>
               <li class="small-key" id="ui">UI</li>
               <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="small-project-card">
+      <div class="small-project-card" style="background-image: url(./img/engs12-icon.png)" data-micromodal-trigger="engs12-modal">
+        <div class="background-overlay">
+        </div>
         <div class="small-text-wrapper">
 
           <div class="small-text">
             <h2 class="small-title">Design Thinking</h2>
             <h2 class="small-role">Teaching Assistant</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
-              <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+              <li class="small-key" id="design-thinking">Design Thinking</li>
+              <li class="small-key" id="product">Product Design</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="small-project-card">
+      <div class="small-project-card" style="background-image: url(./img/maze-icon.jpg)" data-micromodal-trigger="maze-modal">
+        <div class="background-overlay">
+        </div>
         <div class="small-text-wrapper">
 
           <div class="small-text">
             <h2 class="small-title">Maze Solver</h2>
             <h2 class="small-role">Development Project</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UX</li>
-              <li class="small-key" id="ui">UI</li>
-              <li class="small-key" id="illustrator">Illustrator</li>
-              <li class="small-key" id="sketch-figma">Sketch/Figma</li>
+              <li class="small-key" id="c">C</li>
             </ul>
           </div>
         </div>
@@ -351,13 +346,199 @@
 
 
 
-  <div>
+  <div id="adventure-section">
     <div class="title-wrapper">
       <h1 class="section-title">Adventures</h1>
       <img class="section-number" src="./img/3.png" alt="4">
     </div>
   </div>
 
+  <div>
+    <h1 class="coming-soon">Coming soon!</h1>
+  </div>
+
+  <div>
+    <h1 class="footer">Designed and created by Justin Luo. All rights reserved.</h1>
+  </div>
+
+  <!-- Other Project Modals -->
+
+  <div class="modal micromodal-slide" id="react-blog-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+          React Blog
+        </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="crunch-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Crunch
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="handout-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Handout Pocket
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="team4tech-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Team4Tech
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="seabird-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Seabird Apps
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="making-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Making It Stick
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="engs12-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Design Thinking Teaching Assitant
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary">Continue</button>
+          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="maze-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Maze Solver
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <p>
+            Example
+          </p>
+          <footer class="modal__footer">
+            <button class="modal__btn modal__btn-primary">Continue</button>
+            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+          </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
