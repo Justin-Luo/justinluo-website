@@ -8,3 +8,4 @@ window.project = ScrollReveal({
 });
 
 project.reveal('.page-header-content');
+project.reveal('.page-quote-background');
