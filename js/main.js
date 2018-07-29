@@ -28,3 +28,16 @@ $("#adventure").click(function() {
     },
     'slow');
 });
+
+window.sr = ScrollReveal({
+  reset: true,
+  rotate: {
+    x: 0,
+    y: -10,
+    z: 0
+  },
+  scale: 0.9,
+});
+sr.reveal('.large-project-card');
+sr.reveal('.small-project-card');
+sr.reveal('.about');
