@@ -191,7 +191,6 @@ nav {
 .title-wrapper {
   position: relative;
   text-align: center;
-  width: 250px;
   margin: auto;
 }
 
@@ -212,8 +211,8 @@ nav {
 .section-number {
   position: absolute;
   top: -15px;
-  left: 10px;
-  height: 70px;
+  left: 47.5%;
+  height: 80px;
   z-index: -1;
 }
 
@@ -401,8 +400,28 @@ nav {
   background-color: rgb(205, 1, 1);
 }
 
+#marketing {
+  background-color: rgb(35, 134, 157);
+}
+
 #prototyping {
   background-color: rgb(254, 45, 255);
+}
+
+#after-effects {
+  background-color: rgb(27, 203, 131);
+}
+
+#product {
+  background-color: rgb(238, 177, 31);
+}
+
+#design-thinking {
+  background-color: rgb(37, 49, 255);
+}
+
+#c {
+  background-color: rgb(0, 173, 4);
 }
 
 .project-card-content {
