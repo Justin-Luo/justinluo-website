@@ -74,14 +74,14 @@
   justify-content: center;
 }
 
-#main-carousel {
+.carousel {
   background-color: lightgrey;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-#main-carousel:before, #maincarousel-gif:after {
+.carousel:before, .carousel:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -96,7 +96,7 @@
   border-radius: 100px / 10px;
 }
 
-#main-carousel:after {
+.carousel:after {
   right: 10px;
   left: auto;
   -webkit-transform: skew(8deg) rotate(3deg);
@@ -106,14 +106,19 @@
   transform: skew(8deg) rotate(3deg);
 }
 
-.item {
-  width: 800px !important;
-  height: 450px !important;
+.main-item {
+  width: 1200px !important;
+  height: 675px !important;
 }
 
 .carousel-img {
   width: 100% !important;
   height: 100% !important;
+}
+
+.hifi-item {
+  width: 700px !important;
+  height: 512px !important;
 }
 
 .page-quote-background {
