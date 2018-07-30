@@ -75,7 +75,7 @@
 }
 
 .carousel {
-  background-color: lightgrey;
+  background-color: white;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -118,6 +118,21 @@
 
 .hifi-item {
   width: 700px !important;
+  height: 512px !important;
+}
+
+.iphone-item {
+  width: 292px !important;
+  height: 512px !important;
+}
+
+.lowfi-item {
+  width: 292px !important;
+  height: 512px !important;
+}
+
+.persona-item {
+  width: 664px !important;
   height: 512px !important;
 }
 
