@@ -122,8 +122,8 @@
 }
 
 .iphone-item {
-  width: 292px !important;
-  height: 512px !important;
+  width: 355px !important;
+  height: 622px !important;
 }
 
 .lowfi-item {
@@ -134,6 +134,11 @@
 .persona-item {
   width: 664px !important;
   height: 512px !important;
+}
+
+.sketch-item {
+  width: 300px !important;
+  height: 400px !important;
 }
 
 .page-quote-background {
@@ -233,4 +238,58 @@
   -ms-transform: skew(8deg) rotate(3deg);
   -o-transform: skew(8deg) rotate(3deg);
   transform: skew(8deg) rotate(3deg);
+}
+
+.images-gallery {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gallery-img {
+  width: 300px;
+  height: 400px;
+  margin: 0px 30px 0px 30px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.gallery-img:before, .gallery-img:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+
+.gallery-img:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+#gallery-portrait-img {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#phone {
+  margin-top: 50px;
+  width: 292px !important;
+  height: 512px !important;
 }
