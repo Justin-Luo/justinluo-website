@@ -134,6 +134,16 @@
   height: 100% !important;
 }
 
+.macbook-item {
+  width: 800px !important;
+  height: 600px !important;
+}
+
+#side-macbook {
+  width: 560px !important;
+  height: 422px !important;
+}
+
 .hifi-item {
   width: 700px !important;
   height: 512px !important;
@@ -310,19 +320,6 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-
-.images-gallery:after {
-  right: 10px;
-  left: auto;
-  -webkit-transform: skew(8deg) rotate(3deg);
-  -moz-transform: skew(8deg) rotate(3deg);
-  -ms-transform: skew(8deg) rotate(3deg);
-  -o-transform: skew(8deg) rotate(3deg);
-  transform: skew(8deg) rotate(3deg);
 }
 
 .gallery-img {
