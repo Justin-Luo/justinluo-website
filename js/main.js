@@ -1,4 +1,6 @@
-MicroModal.init();
+MicroModal.init({
+  awaitCloseAnimation: true
+});
 
 $("#main-logo").click(function() {
   $('html,body').animate({
