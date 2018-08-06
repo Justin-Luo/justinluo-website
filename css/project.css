@@ -40,6 +40,16 @@
   text-align: center;
 }
 
+.page-team {
+  color: white;
+  margin: 0px;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
 .page-tagline {
   color: white;
   font-family: 'Fira Sans', sans-serif;
@@ -66,6 +76,135 @@
 #button:hover {
   color: rgb(71, 178, 255);
   background-color: white;
+}
+
+.carousel-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  background-color: white;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.carousel:before, .carousel:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+
+.carousel:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.images-collage {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.main-item {
+  width: 800px !important;
+  height: 500px !important;
+}
+
+.carousel-img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.macbook-item {
+  width: 800px !important;
+  height: 600px !important;
+}
+
+#side-macbook {
+  width: 560px !important;
+  height: 422px !important;
+}
+
+.hifi-item {
+  width: 700px !important;
+  height: 512px !important;
+}
+
+.lofi-mobile-item {
+  width: 175px !important;
+  height: 307px !important;
+  margin: 20px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.lofi-mobile-item:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.hifi-mobile-item {
+  width: 219px !important;
+  height: 384px !important;
+  margin: 20px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.hifi-mobile-item:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.iphone-item {
+  width: 355px !important;
+  height: 622px !important;
+}
+
+.lowfi-item {
+  width: 292px !important;
+  height: 512px !important;
+}
+
+.persona-item {
+  width: 664px !important;
+  height: 512px !important;
+}
+
+.sketch-item {
+  width: 300px !important;
+  height: 400px !important;
 }
 
 .page-quote-background {
@@ -99,7 +238,7 @@
   color: #616161;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   margin: 50px 150px 50px 150px;
 }
 
@@ -107,7 +246,7 @@
   color: #323232;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   margin: 50px 150px 50px 150px;
 }
 
@@ -120,5 +259,85 @@
   color: #323232;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.large-gif-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#chart-analysis {
+  max-widthL
+}
+
+.large-gif {
+  display: block;
+  max-width: 1000px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin: 25px 25px 25px 25px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.large-gif:before, .large-gif:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+
+.large-gif:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.images-gallery {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gallery-img {
+  width: 300px;
+  height: 400px;
+  margin: 0px 10px 0px 10px;
+}
+
+#gallery-portrait-img {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#phone {
+  margin-top: 10px;
+  width: 292px !important;
+  height: 512px !important;
 }

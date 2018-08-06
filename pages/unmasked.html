@@ -6,12 +6,11 @@
   <title>Justin Luo</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/project.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker"
     rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/f1cdcabfb0.js"></script>
-
 </head>
 
 <body>
@@ -19,16 +18,32 @@
 
   <!-- Header -->
   <div class="page-header">
-
-    <a class="page-back" href="../index.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; Back to home </a>
-
-    <h1 class="page-title">UNMASKED</h1>
-    <h2 class="page-role">UI/UX DESIGNER</h2>
-    <h3 class="page-tagline">How might we create a annonymous community to discuss mental health issues at Dartmouth?</h3>
-
+    <div class="page-back-container">
+      <a class="page-back" href="../index.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; Back to home </a>
+    </div>
+    <div class="page-header-content">
+      <h1 class="page-title">UNMASKED</h1>
+      <h2 class="page-role">UI/UX DESIGNER</h2>
+      <h2 class="page-team">Worked with Dorothy Qu and Eric Wang</h2>
+      <h3 class="page-tagline">How might we create a annonymous community to discuss mental health issues at Dartmouth?</h3>
+    </div>
   </div>
 
+
   <div class="page-body">
+
+    <div class="gallery-wrapper">
+
+      <div class="images-gallery">
+
+        <img class="gallery-img" id="phone" src="../img/unmasked/login-iphone.png" alt="john">
+
+        <img class="gallery-img" id="phone" src="../img/unmasked/homescreen-iphone.png" alt="analytics">
+
+        <img class="gallery-img" id="phone" src="../img/unmasked/chat-iphone.png" alt="graphs">
+
+      </div>
+    </div>
     <!-- Problem -->
     <div class="title-wrapper">
       <h1 class="section-title">Problem</h1>
@@ -63,20 +78,26 @@
 
     <h2 class="page-small-title"> Social Media Platforms </h2>
 
+    <div class="large-gif-container">
+      <img class="large-gif" id="chart-analysis" src="../img/unmasked/social-media-analysis.PNG" />
+    </div>
+
+
     <p class="page-normal-text"> We looked at various social media platforms to see how their user flow encouraged discussion and
       interaction. For example, platforms like Instagram and Facebook encourage reviews through quantitative
-      measurements (i.e. number of likes), and this measurement also puts pressure on the user to post
-      popular posts that appealed to the mass audience. On Reddit, discussion is organized in a hierarchy
-      so that the most liked comments are displayed first. For forums, discussion in posts and comments
+      measurements (e.g. number of likes), and this measurement puts pressure on the user to post popular
+      posts that appealed to the mass audience. On Reddit, discussion is organized in a hierarchy so
+      that the most liked comments are displayed first. For forums, discussion in posts and comments
       is usually chronoloigally ordered, creating an equal but often unorganized discussion that can
       branch into several sub-discussions.
     </p>
 
+
     <h2 class="page-small-title"> User Interviews</h2>
 
     <p class="page-normal-text"> We interviewed 15 students from various majors, backgrounds, and social economic statuses in order
-      to find what emotions and concerns people had for a discussion platform. Since most of the students
-      were familiar with social media platforms, we asked them questions about their social media use.
+      to find what emotions and concerns people had for a discussion platform. We asked them about their
+      social media use.
     </p>
 
     <h2 class="page-small-title">Things that we found important</h2>
@@ -86,8 +107,10 @@
         definitely plays a large part in their social media experience. Many even agree that it often
         creates more pressure and stress.</li>
       <li class="page-list-item">Some of our interviewees mentioned that posting in a Reddit thread or a comment section can be
-        intimidating. </li>
-      <li class="page-list-item">Some believe that social media interactions are superficial and often a best version of ourselves.
+        intimidating.
+      </li>
+      <li class="page-list-item">Some believe that social media interactions are superficial and often a 'fake' best version of
+        ourselves.
       </li>
     </ul>
 
@@ -106,7 +129,43 @@
 
     <h2 class="page-small-title"> User Personas</h2>
 
+    <div class="carousel-wrapper">
 
+      <div id="unmasked-personas-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#unmasked-personas-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#unmasked-personas-carousel" data-slide-to="1"></li>
+          <li data-target="#unmasked-personas-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="persona-item item active">
+            <img class="carousel-img" src="../img/unmasked/john.png" alt="john">
+          </div>
+
+          <div class="persona-item item">
+            <img class="carousel-img" src="../img/unmasked/sarah.png" alt="analytics">
+          </div>
+
+          <div class="persona-item item">
+            <img class="carousel-img" src="../img/unmasked/tracy.png" alt="graphs">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#unmasked-personas-carousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#unmasked-personas-carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
 
     <div class="title-wrapper">
       <h1 class="section-title">Ideate</h1>
@@ -144,36 +203,103 @@
 
     <p class="page-normal-text"> By building out low-fis, we were able to quickly discuss feature ideas and get user feedback.</p>
 
-    <p class="page-normal-text"> For example, we quickly found that users felt that three different types of reactions to a post would
+
+
+
+    <div class="images-collage">
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/homescreen1-lowfi.png " alt="john ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/homescreen2-lowfi.png " alt="analytics ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/comment-lowfi.png " alt="graphs ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/commennts-lowfi.png " alt="graphs ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/highlights-lowfi.png " alt="graphs ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/notifications-lowfi.png " alt="graphs ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/chat-lowfi.png " alt="graphs ">
+      </div>
+
+      <div class=" lofi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/user-activity-lowfi.png " alt="graphs ">
+      </div>
+
+    </div>
+
+
+
+    <p class="page-normal-text "> For example, we quickly found that users felt that three different types of reactions to a post would
       be excessive and one 'like' button would suffice. Additionally, we were able to get positive feedback
       on our idea of allowing users to like each other's posts, but not sharing the number of likes to
       anyone. As a result, the original poster would only be notified occasionally of people generally
       liking their post or comment.
     </p>
 
-    <div class="title-wrapper">
-      <h1 class="section-title">Product</h1>
-      <img class="section-number" src="../img/4.png" alt="4">
+    <div class="title-wrapper ">
+      <h1 class="section-title ">Product</h1>
+      <img class="section-number " src="../img/5.png " alt="5 ">
     </div>
 
 
-    <p class="page-normal-text"> We designed with cool and warm colors that promoted comfort and low-stress. For our main fonts, we
+    <div class="images-collage ">
+      <div class="hifi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/login-hifi.png " alt="graphs ">
+      </div>
+      <div class="hifi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/identicon-hifi.png " alt="graphs ">
+      </div>
+
+      <div class="hifi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/homescreen-hifi.png " alt="graphs ">
+      </div>
+
+      <div class="hifi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/connections-hifi.png " alt="graphs ">
+      </div>
+
+      <div class="hifi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/messages-hifi.png " alt="graphs ">
+      </div>
+
+      <div class="hifi-mobile-item ">
+        <img class="carousel-img " src="../img/unmasked/chat-hifi.png " alt="graphs ">
+      </div>
+    </div>
+
+
+
+    <p class="page-normal-text "> We designed with cool and warm colors that promoted comfort and low-stress. For our main fonts, we
       decided to use Comfortaa because of its gentle curves in titles, and used Lato for clean and clear
       readability in actually posts. Additionally, we wanted to use images and icons that contributed
       to our comforting atmosphere. </p>
 
-    <div class="title-wrapper">
-      <h1 class="section-title">Reflection</h1>
-      <img class="section-number" src="../img/4.png" alt="4">
+    <div class="title-wrapper ">
+      <h1 class="section-title ">Reflection</h1>
+      <img class="section-number " src="../img/6.png " alt="6 ">
     </div>
 
-    <p class="page-normal-text"> After our product demo, multiple students and faculty members complemented our ability to create
+    <p class="page-normal-text "> After our product demo, multiple students and faculty members complemented our ability to create
       a platform that encourages meaningful discussion. Our partners at the Student Wellness Center were
       overwhelmingly pleased with our progress throughout the term, and they hope that that a successful
       beta app with our designs will be implemented in the coming terms. </p>
 
 
-    <p class="page-normal-text"> We hope that Unmasked shows the importance of the design process, especially the user research and
+    <p class="page-normal-text "> We hope that Unmasked shows the importance of the design process, especially the user research and
       ideate phases. Without our time and effort in these stages, we would have overlooked several aspects
       of our user experience and not considered how potential features could negatively affect the main
       purpose of the application.</p>
@@ -183,7 +309,11 @@
 
 
   </div>
-  <script type="text/javascript" src="../js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js "></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin=" anonymous "></script>
+  <script type="text/javascript " src="../js/bootstrap.js "></script>
+  <script type="text/javascript " src="../js/project.js "></script>
 </body>
 
 </html>

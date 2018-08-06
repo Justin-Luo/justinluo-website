@@ -6,14 +6,10 @@
   <title>Justin Luo</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/project.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"
-  />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"
-  />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/f1cdcabfb0.js"></script>
 </head>
 
@@ -23,18 +19,37 @@
   <!-- Header -->
   <div class="page-header">
 
-    <a class="page-back" href="../index.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; Back to home </a>
+    <div class="page-back-container">
+      <a class="page-back" href="../index.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; Back to home </a>
+    </div>
+    <div class="page-header-content">
+      <h1 class="page-title">LEFT ON READ</h1>
+      <h2 class="page-role"> Lead Designer | Front-End Developer</h2>
+      <h3 class="page-tagline"> Analyze your texts. Learn who your friends area. See your texting habits. </h3>
 
-    <h1 class="page-title">LEFT ON READ</h1>
-    <h2 class="page-role"> Lead Designer | Front-End Developer</h2>
-    <h3 class="page-tagline"> Analyze your texts. Learn who your friends area. See your texting habits. </h3>
+      <div id="button">
+        <a id="resume-link" href="http://leftonread.me" target="_blank">
+          <p id="see-resume">See the website</p>
+        </a>
+      </div>
 
-    <div id="button">
-      <a id="resume-link" href="http://leftonread.me" target="_blank">
-        <p id="see-resume">See the website</p>
-      </a>
+
     </div>
   </div>
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="images-collage">
+    <div class="macbook-item">
+      <img class="carousel-img" src="../img/lor/main-macbook.png" alt="main">
+    </div>
+
+  </div>
+
+  </div>
+
+
 
   <div class="page-body">
     <!-- Problem -->
@@ -96,6 +111,44 @@
       wants in mind.
     </p>
 
+    <div class="carousel-wrapper">
+
+      <div id="unmasked-personas-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#unmasked-personas-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#unmasked-personas-carousel" data-slide-to="1"></li>
+          <li data-target="#unmasked-personas-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="persona-item item active">
+            <img class="carousel-img" src="../img/lor/karen.png" alt="john">
+          </div>
+
+          <div class="persona-item item">
+            <img class="carousel-img" src="../img/lor/jake.png" alt="analytics">
+          </div>
+
+          <div class="persona-item item">
+            <img class="carousel-img" src="../img/lor/janice.png" alt="graphs">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#unmasked-personas-carousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#unmasked-personas-carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+
 
     <div class="title-wrapper">
       <h1 class="section-title">Ideate</h1>
@@ -112,6 +165,14 @@
       modern design would help build our website's credibility. With the minimalist design and a straightforward
       user flow, we aimed to create a clean user experience that flowed with each step of the experience.</p>
 
+    <div class="images-gallery">
+
+      <img class="gallery-img" src="../img/lor/sketch1.PNG" alt="main">
+      <img class="gallery-img" id="gallery-portrait-img" src="../img/lor/sketch3.PNG" alt="main">
+      <img class="gallery-img" src="../img/lor/sketch2.PNG" alt="main">
+
+    </div>
+
     <p class="page-normal-text"> For example, initial mockups included a navigation bar at the top of each page. However, we eventually
       decided to remove it because it cluttered our design and offered little benefit, giving that our
       site navigation was already straightforward.
@@ -124,6 +185,49 @@
       This crucial part of the user flow was something we tested and reiterated multiple times during
       the prototype phase. </p>
 
+
+    <h1 class="page-small-title"> Initial Hi-Fis </h1>
+
+
+    <div class="carousel-wrapper">
+
+      <div id="hifi-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#hifi-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#hifi-carousel" data-slide-to="1"></li>
+          <li data-target="#hifi-carousel" data-slide-to="2"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="hifi-item item active">
+            <img class="carousel-img" src="../img/lor/landing-hifi.png" alt="main">
+          </div>
+
+          <div class="hifi-item item">
+            <img class="carousel-img" src="../img/lor/landing-bar-hifi.png" alt="analytics">
+          </div>
+
+          <div class="hifi-item item">
+            <img class="carousel-img" src="../img/lor/upload-first-hifi.png" alt="graphs">
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#hifi-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+        <a class="right carousel-control" href="#hifi-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+
+    </div>
 
     <div class="title-wrapper">
       <h1 class="section-title">Prototype</h1>
@@ -155,35 +259,41 @@
 
     <h3 class="page-normal-text"> My favorite bit of feedback...</h3>
     <div class="page-quote-background">
-      <h1 class="page-large-quote"> "Didn't realize I would be so interested in my data. I was a skeptic at first but this has lots of potential."</h1>
+      <h1 class="page-large-quote"> "I was definitely a skeptic at first, but this data is so interesting!"</h1>
       <h3 class="page-quote-author"> Dartmouth Student '19 </h3>
     </div>
     <div class="title-wrapper">
       <h1 class="section-title">Product</h1>
-      <img class="section-number" src="../img/4.png" alt="4">
-    </div>
-
-
-    <div class="title-wrapper">
-      <h1 class="section-title">Next Steps</h1>
       <img class="section-number" src="../img/5.png" alt="5">
     </div>
 
-    <p class="page-normal-text"> From the outstanding positive feedback from both our peers and faculty, we knew that we wanted to
+    <div class="large-gif-container">
+      <img class="large-gif" src=" ../img/lor/main-page.gif " alt="main-page-animation" />
+      <img class="large-gif" src="../img/lor/graphs.gif" alt="graphs animations" />
+    </div>
+
+    <div class="title-wrapper ">
+      <h1 class="section-title ">Next Steps</h1>
+      <img class="section-number " src="../img/6.png " alt="6 ">
+    </div>
+
+    <p class="page-normal-text "> From the outstanding positive feedback from both our peers and faculty, we knew that we wanted to
       expand Left On Read to our friends and family, and possibly even the world. </p>
 
-    <p class="page-normal-text"> Even from the start, we knew that Left On Read wasn't going to change the world. We were first interested
+    <p class="page-normal-text "> Even from the start, we knew that Left On Read wasn't going to change the world. We were first interested
       in the project because of the proposed challenge of parsing texts and displaying analytics. But
       we tapped into a service that catches almost everyone's curiosity, and we want to share the feeling
       of exploration when we first got our data. It was clear that people loved to see data about themselves.</p>
 
-    <p class="page-normal-text"> Since the end of spring 2018, we have been working on a design overhaul and preparing for a mass
+    <p class="page-normal-text "> Since the end of spring 2018, we have been working on a design overhaul and preparing for a mass
       launch to the rest of the world. Check out what we're up to at leftonread.me </p>
 
   </div>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
-  <script type="text/javascript" src="../js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js "></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin=" anonymous "></script>
+  <script type="text/javascript " src="../js/bootstrap.js "></script>
+  <script type="text/javascript " src="../js/project.js "></script>
 </body>
 
 </html>

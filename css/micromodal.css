@@ -16,22 +16,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .modal__container {
   background-color: #fff;
-  padding: 30px;
-  max-width: 500px;
-  max-height: 100vh;
   border-radius: 4px;
   overflow-y: auto;
   box-sizing: border-box;
 }
 
 .modal__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: rgb(71, 178, 255);
+  padding: 30px;
 }
 
 .modal__title {
@@ -46,18 +45,112 @@
 
 .modal__close {
   background: transparent;
-  border: 0;
+  position: absolute;
+  border: none;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
 }
 
-.modal__header .modal__close:before {
-  content: "\2715";
+.modal__close:focus {
+  outline: 0;
 }
 
 .modal__content {
-  margin-top: 2rem;
+  margin-top: 10px;
   margin-bottom: 2rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, .8);
+}
+
+.modal__container {
+  width: 60%;
+  height: 85%;
+}
+
+.modal-title {
+  color: white;
+  margin: 0px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+}
+
+.modal-role {
+  color: white;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-description {
+  margin-top: 20px;
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+}
+
+.modal-small-link {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  transition: color 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.modal-small-link:hover {
+  color: rgb(47, 47, 47);
+}
+
+.modal-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  margin-top: 20px;
+  width: 534px;
+  height: 300px
+}
+
+#macbook {
+  margin-top: 0px;
+  width: 590px;
+  height: 360px;
+}
+
+#sq {
+  padding: 0px 20px 0px 20px;
+  width: 350px;
+  height: 350px;
+}
+
+#iphone {
+  margin-top: 10px;
+  width: 233px;
+  height: 350px;
+}
+
+#page {
+  width: 270px !important;
+  height: 360px !important;
+  padding: 20px 5px 0px 5px;
+}
+
+.modal-video {
+  margin-top: 20px;
+  width: 580px;
+  height: 330px
 }
 
 /**************************\
@@ -96,7 +189,7 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(-10%);
+    transform: translateY(10%);
   }
 }
 

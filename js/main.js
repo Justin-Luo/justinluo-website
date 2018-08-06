@@ -1,4 +1,6 @@
-MicroModal.init();
+MicroModal.init({
+  awaitCloseAnimation: true
+});
 
 $("#main-logo").click(function() {
   $('html,body').animate({
@@ -29,15 +31,36 @@ $("#adventure").click(function() {
     'slow');
 });
 
-window.sr = ScrollReveal({
+window.sr = ScrollReveal();
+
+var bottomReveal = {
   reset: true,
   rotate: {
     x: 0,
-    y: -10,
+    y: 0,
     z: 0
   },
   scale: 0.9,
-});
-sr.reveal('.large-project-card');
-sr.reveal('.small-project-card');
-sr.reveal('.about');
+};
+
+var leftReveal = {
+  reset: true,
+  origin: 'left',
+  scale: 1,
+  distance: '40px',
+  duration: 500,
+};
+
+var rightReveal = {
+  reset: true,
+  origin: 'right',
+  scale: 1,
+  distance: '40px',
+  duration: 500,
+};
+
+sr.reveal('.large-project-card', bottomReveal);
+sr.reveal('.bio-text', leftReveal);
+sr.reveal('.contact-wrapper', rightReveal);
+sr.reveal('.small-project-card', bottomReveal);
+sr.reveal('.about', bottomReveal);
