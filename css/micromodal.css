@@ -67,8 +67,7 @@
 
 .modal__container {
   width: 60%;
-  height: 80%;
-  overflow: hidden;
+  height: 85%;
 }
 
 .modal-title {
@@ -120,38 +119,38 @@
 
 .modal-image {
   margin-top: 20px;
-  width: 712px;
-  height: 399px
+  width: 534px;
+  height: 300px
 }
 
 #macbook {
   margin-top: 0px;
-  width: 700px;
-  height: 525px;
+  width: 590px;
+  height: 360px;
 }
 
 #sq {
   padding: 0px 20px 0px 20px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 
 #iphone {
-  margin-top: -10px;
-  width: 292px;
-  height: 512px;
+  margin-top: 10px;
+  width: 233px;
+  height: 350px;
 }
 
 #page {
-  width: 307px !important;
-  height: 406px !important;
-  padding: 30px 5px 0px 5px;
+  width: 270px !important;
+  height: 360px !important;
+  padding: 20px 5px 0px 5px;
 }
 
 .modal-video {
   margin-top: 20px;
-  width: 769px;
-  height: 432px
+  width: 580px;
+  height: 330px
 }
 
 /**************************\
