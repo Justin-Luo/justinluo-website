@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Justin Luo</title>
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/micromodal.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker"
@@ -11,8 +12,8 @@
   <script src="https://use.fontawesome.com/f1cdcabfb0.js"></script>
 
 </head>
-
 <body>
+
   <!-- Navigation bar -->
   <nav>
     <div>
@@ -39,6 +40,7 @@
 
   <!-- Bio -->
   <div class="bio-box">
+    <div class="bio-box-wrapper">
     <div class="bio-text">
       <h1 id="bio-intro">JUSTIN LUO</h1>
       <h2 id="bio-description">DESIGNER | DEVELOPER</h2>
@@ -77,8 +79,10 @@
     <!-- <div class="bio-pic">
         <img id="justin-pic" src="./img/justin.jpg" alt="justin">
       </div> -->
+    </div>
   </div>
 
+  <div class="body-wrapper">
 
 
   <!-- About Me -->
@@ -110,9 +114,12 @@
   <div class="projects-background">
 
     <!-- Left on Read -->
+
     <div class="project-wrapper" id="left-project">
       <!-- <div class="project-background" id="left">
     </div> -->
+    <a class="project-link" href="./pages/lor.html">
+
       <div class="large-project-card" id="left-section">
         <div class="project-card-header">
           <div class="project-name">
@@ -133,22 +140,29 @@
             <p> "Analyze your texts. Explore the data. See who your friends are."</p>
             <p> Left On Read allows users to analyze their Messages conversations on macOS devices. </p>
             <!-- <p> Left On Read is a website that allows users to view analytics about their Messages conversations on macOS devices. Left On Read started as a final group project for my Full Stack Web Development class.</p> -->
-            <a class="project-link" href="./pages/lor.html">
-              <p>Learn more
-              </p>
-            </a>
-          </div>
+              <div class="see-more-button" id="lor">
+
+              <p class="project-link-text">See more</p>
+
+            </div>
+
+        </div>
           <div class="project-photo">
             <img class="project-img" src="./img/lor-logo.png" />
           </div>
         </div>
       </div>
+    </a>
+
     </div>
+
 
     <!-- Unmasked -->
     <div class="project-wrapper" id="right-project">
       <!-- <div class="project-background" id="right">
     </div> -->
+    <a class="project-link" href="./pages/unmasked.html">
+
       <div class="large-project-card" id="right-section">
         <div class="project-card-header">
           <div class="project-name">
@@ -169,23 +183,30 @@
             <p class="tagline"> "How might we create a annonymous community to discuss mental health issues at Dartmouth?
               "
             </p>
-            <p> Dartmouth Unmasked is a mobile application that allows Dartmouth students to annonymously
+            <p>Unmasked is a mobile application that allows students to annonymously
               discuss mental health and other personal issues.</p>
-            <a class="project-link" href="./pages/unmasked.html">
-              <p>Learn more</p>
-            </a>
-          </div>
+
+              <div class="see-more-button" id="unmasked">
+
+              <p class="project-link-text">See more</p>
+            </div>
+
+        </div>
           <div class="project-photo">
             <img class="project-img" src="./img/unmasked-icon.png" />
           </div>
         </div>
       </div>
+    </a>
+
     </div>
 
     <!-- STIC -->
     <div class="project-wrapper" id="left-project">
       <!-- <div class="project-background" id="left">
     </div> -->
+    <a class="project-link" href="./pages/stic.pdf" target="_blank">
+
       <div class="large-project-card" id="left">
         <div class="project-card-header">
           <div class="project-name">
@@ -208,13 +229,19 @@
             <!-- <a class="project-link" href="./pages/stic.html">
               <p>See the process</p>
             </a> -->
-            <p> Details coming soon! </p>
-          </div>
+                <div class="see-more-button" id="stic">
+
+                <p class="project-link-text">See more</p>
+                </div>
+
+        </div>
           <div class="project-photo">
             <img class="project-img" src="./img/stic-logo.png" />
           </div>
         </div>
       </div>
+    </a>
+
     </div>
 
     <div class="other-projects">
@@ -364,9 +391,7 @@
     <h1 class="coming-soon">Coming soon!</h1>
   </div>
 
-  <div>
-    <h1 class="footer">Designed and created by Justin Luo. All rights reserved.</h1>
-  </div>
+
 
   <!-- Other Project Modals -->
 
@@ -638,6 +663,11 @@
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
+</div>
+
+<div>
+  <h1 class="footer">Designed and created by Justin Luo. All rights reserved.</h1>
+</div>
 </body>
 
 </html>

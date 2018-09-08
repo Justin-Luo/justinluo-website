@@ -13,12 +13,15 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  padding-top: 50px;
-  transition: color 0.3s;
+  padding-top: 10px;
+  padding-left: 100px;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s !important;
 }
 
 .page-back:hover {
-  color: rgb(232, 232, 232);
+  color: #e8e8e8;
+  transform: translate(-3px, 0);
 }
 
 .page-title {
@@ -237,7 +240,7 @@
 .page-normal-text {
   color: #616161;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   margin: 50px 150px 50px 150px;
 }
@@ -258,7 +261,7 @@
 .page-list-item {
   color: #323232;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
 }
 
@@ -340,4 +343,26 @@
   margin-top: 10px;
   width: 292px !important;
   height: 512px !important;
+}
+
+.next-links-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.next-link {
+  display: inline-block;
+  color: #8c8c8c;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.next-link:hover {
+  color: rgb(32, 32, 32);
+  transform: translate(0, -3px);
 }

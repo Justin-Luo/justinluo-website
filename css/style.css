@@ -1,24 +1,33 @@
+
 body, html {
   margin: 0px;
+}
+
+.body-wrapper {
+  margin: auto;
+  max-width: 1000px;
+  background-color: white;
 }
 
 nav {
   position: fixed;
   width: 100%;
   background-color: white;
-  box-shadow: 0px 3px 15px rgb(126, 126, 126);
-  z-index: 1;
+  z-index: 2;
+  border-bottom: 2px solid #e4e4e4;
 }
 
 .navbar {
+  max-width: 1000px;
   display: flex;
   position: relative;
   padding: 20px 10px 20px 10px;
   justify-content: flex-end;
   list-style: none;
   z-index: 1;
+  margin: auto;
   margin-top: 0px;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   background-position: white;
 }
 
@@ -37,17 +46,20 @@ nav {
 }
 
 .navbar-heading {
+  display: inline-block;
   text-decoration: none;
   color: #8c8c8c;
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
-  transition: color 0.3s;
   cursor: pointer;
+  transition: color 0.3s, transform 0.3s !important;
 }
 
 .navbar-heading:hover {
   color: rgb(32, 32, 32);
+  transform: translate(0, -2px) !important;
 }
+
 
 .bio-box {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -56,9 +68,9 @@ nav {
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
   z-index: -1;
-  padding: 100px 100px 100px 100px;
+  padding: 100px 50px 50px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @-webkit-keyframes Gradient {
@@ -97,9 +109,16 @@ nav {
   }
 }
 
+.bio-box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding-left: 50px;
+}
+
 .bio-text {
-  margin-top: 20px;
-  width: 50%
+  margin-top: 0px;
+  width: 70%;
 }
 
 #resume-link {
@@ -181,11 +200,13 @@ nav {
   text-decoration: none;
   font-size: 50px;
   color: white;
-  transition: color 0.3s;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s !important;
 }
 
 .contact-icon:hover {
-  color: #d7d7d7;
+  color: #e8e8e8;
+  transform: translate(0, -3px) !important;
 }
 
 .title-wrapper {
@@ -213,7 +234,7 @@ nav {
   top: -15px;
   left: 47.5%;
   height: 80px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .about-wrapper {
@@ -222,7 +243,6 @@ nav {
 }
 
 .about {
-  max-width: 60%;
   display: flex;
   justify-content: space-around;
   padding: 20px 0px 20px 0px;
@@ -288,14 +308,22 @@ nav {
 .project-wrapper {
   position: relative;
   display: flex;
-  margin: auto;
+  justify-content: center;
+  padding: 50px 0px 50px 0px;
 }
 
 .large-project-card {
-  background-color: #f0f0f0;
+  border: 2px solid rgb(232, 232, 232);
+  border-radius: 10px;
+  background-color: white;
   padding: 50px 50px 50px 50px;
-  width: 70%;
-  margin: 50px 0px 50px 0px;
+  max-width: 800px;
+  transition: transform 0.3s ease-out !important;
+
+}
+
+.large-project-card:hover {
+  transform: scale(1.025, 1.025) !important;
 }
 
 /* .project-background#left {
@@ -318,7 +346,7 @@ nav {
   left: 165px;
 } */
 
-#left-project {
+/* #left-project {
   justify-content: flex-start;
   padding-left: 20%;
 }
@@ -326,7 +354,7 @@ nav {
 #right-project {
   justify-content: flex-end;
   padding-right: 20%;
-}
+} */
 
 .project-card-header {
   display: flex;
@@ -446,20 +474,46 @@ nav {
   align-items: center;
 }
 
+.project-link {
+  text-decoration: none;
+}
 .project-img {
   width: 200px;
 }
 
-.project-link {
-  color: #616161;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  transition: color 0.3s;
+.see-more-button {
+  width: 100px;
+  height: 35px;
+  padding: 10px 20px 0px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  text-align: center;
 }
 
-.project-link:hover {
-  color: rgb(47, 47, 47);
+#lor {
+  background: rgb(0, 124, 252);
+}
+
+#unmasked {
+  background: rgb(0, 223, 156);
+}
+
+#stic {
+  background: rgb(50, 115, 175);
+}
+
+
+.project-link-text {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  transition: color 0.3s;
+  margin: auto;
+}
+
+.project-link-text:hover {
+  color: rgb(227, 227, 227);
 }
 
 /* Other projects */
@@ -480,6 +534,16 @@ nav {
   transition: opacity 0.3s;
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.small-project-card {
+  transition: transform 0.3s ease-out !important;
+
+}
+
+.small-project-card:hover {
+  transform: translate(0, -5px) !important;
 }
 
 .background-overlay {
@@ -489,6 +553,7 @@ nav {
   background-color: #000;
   opacity: 0;
   transition: opacity 0.3s;
+  border-radius: 10px;
 }
 
 .small-project-card:hover>.background-overlay {
