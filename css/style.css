@@ -634,6 +634,51 @@ nav {
   padding: 50px;
 }
 
+.adventure-text {
+  padding-left: 100px;
+}
+.adventure-title {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  padding-top: 30px;
+}
+
+.adventure-sub {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.adventure-photos {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.landscape-photo > img {
+  width: 450px;
+  margin: 10px 0px 10px 0px;
+  transition: transform 0.3s ease-out !important
+}
+
+.landscape-photo > img:hover {
+  transform: scale(1.025, 1.025) !important;
+}
+
+.portrait-photo > img {
+  height: 450px;
+  margin: 10px 0px 10px 0px;
+  transition: transform 0.3s ease-out !important
+}
+
+.portrait-photo > img:hover {
+  transform: scale(1.025, 1.025) !important;
+}
 .footer {
   background-color: rgb(71, 178, 255);
   color: white;
