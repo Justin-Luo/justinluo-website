@@ -64,5 +64,6 @@ sr.reveal('.bio-text', leftReveal);
 sr.reveal('.contact-wrapper', rightReveal);
 sr.reveal('.small-project-card', bottomReveal);
 sr.reveal('.about', bottomReveal);
-sr.reveal('.landscape-photo', bottomReveal);
-sr.reveal('.portrait-photo', bottomReveal);
+sr.reveal('.adventure-photo', bottomReveal);
+sr.reveal('.adventure-title', leftReveal);
+sr.reveal('.adventure-sub', leftReveal);
