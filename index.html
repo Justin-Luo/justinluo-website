@@ -310,7 +310,7 @@
           </div>
         </div>
       </div>
-      <div class="small-project-card" style="background-image: url(./img/seabird-logo.png)" data-micromodal-trigger="seabird-modal">
+      <div class="small-project-card" id="seabird" style="background-image: url(./img/seabird-logo.png)" data-micromodal-trigger="seabird-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -373,7 +373,7 @@
   <div class="adventures-section">
 
   <div class="adventure-wrapper">
-    <div class="adventure-container">
+    <div class="adventure-container" id="first-container">
     <div class="adventure-text" id="first-text">
       <div class="adventure-title">
         Canyonlands, UT
@@ -385,15 +385,16 @@
     <div class="adventure-photos">
       <div class="adventure-column">
         <img class="adventure-photo" src="./img/photos/utah-ls.jpg">
-        <img class="adventure-photo" src="./img/photos/utah-p.jpg">
-        <img class="adventure-photo" src="./img/photos/utah-ls2.jpg">
+        <img class="adventure-photo" src="./img/photos/utah-p3.jpg">
+        <img id="hidden" class="adventure-photo" src="./img/photos/utah-ls2.jpg">
       </div>
       <div class="adventure-column">
         <img class="adventure-photo" src="./img/photos/utah-ls3.jpg">
-        <img class="adventure-photo" src="./img/photos/utah-p3.jpg">
-        <img class="adventure-photo" src="./img/photos/utah-p2.jpg">
+        <img id="hidden" class="adventure-photo" src="./img/photos/utah-p2.jpg">
       </div>
     </div>
+  </div>
+  <div class="hidden-overlay">
   </div>
   </div>
 
@@ -464,14 +465,13 @@
 
       </div>
       <div class="adventure-column">
-        <img class="adventure-photo" src="./img/photos/dartmouth-p.jpg">
         <img class="adventure-photo" src="./img/photos/dartmouth-p1.jpg">
-
+        <img class="adventure-photo" src="./img/photos/dartmouth-p.jpg">
       </div>
     </div>
   </div>
   </div>
-
+<!--
     <div class="adventure-wrapper">
       <div class="adventure-container">
       <div class="adventure-text">
@@ -513,7 +513,7 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
 </div>
 
 
@@ -618,7 +618,7 @@
       </div>
     </div>
   </div>
-
+<!--
   <div class="modal micromodal-slide" id="team4tech-modal" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true">
@@ -649,7 +649,7 @@
         </main>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="modal micromodal-slide" id="seabird-modal" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>

@@ -67,6 +67,7 @@
 
 .modal__container {
   width: 60%;
+  min-width: 700px;
   height: 85%;
 }
 
