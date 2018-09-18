@@ -556,6 +556,10 @@ nav {
   border-radius: 10px;
 }
 
+#seabird {
+  border: 2px solid rgb(232, 232, 232);
+}
+
 .small-project-card:hover>.background-overlay {
   width: 100%;
   height: 100%;
@@ -578,7 +582,7 @@ nav {
 
 .small-text {
   transform: translate(0%, 20%);
-  height: 100%;
+  height: 80%;
   padding: 0px 20px 0px 20px;
 }
 
@@ -632,6 +636,113 @@ nav {
   font-size: 32px;
   text-align: center;
   padding: 50px;
+}
+
+.adventures-section {
+  margin: 60px 0px;
+}
+
+.adventure-wrapper {
+  padding: 0 20px;
+  position: relative;
+}
+
+.adventure-container {
+  position: relative;
+  max-width: 85%;
+  padding: 0 5%;
+  margin: auto;
+}
+
+.adventure-container:after {
+  content:"";
+  background: rgb(224, 224, 224);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 100%;
+  width: 4px;
+}
+
+#first-container:after {
+  top: -40px;
+  height: 120%;
+}
+
+.adventure-text {
+  padding: 20px 0px;
+  padding-top: 50px;
+}
+
+.adventure-text:after {
+  content:"";
+  background: rgb(71, 178, 255);
+  position: absolute;
+  top: 58px;
+  left: -9px;
+  height: 22px;
+  width: 22px;
+  border-radius: 22px;
+  z-index: 1;
+}
+
+.hidden-overlay {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to bottom, white, transparent);
+}
+
+
+#first-text {
+  padding-top: 0px !important;
+}
+
+#first-text:after {
+  top: 5px;
+  height: 21px;
+  width: 21px;
+  border-radius: 21px;
+}
+
+.adventure-title {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.adventure-sub {
+  color: #616161;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.adventure-photos {
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  max-width: 100%;
+}
+
+.adventure-column {
+  flex: 100%;
+  max-width: 50%;
+}
+
+.adventure-column img {
+  margin: 10px 0px;
+  max-width: 95%;
+  vertical-align: middle;
+  transition: transform 0.3s ease-out !important
+}
+
+.adventure-column img:hover {
+  transform: scale(1.025, 1.025) !important;
 }
 
 .footer {
