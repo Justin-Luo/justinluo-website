@@ -4,7 +4,8 @@
 }
 
 .page-body {
-  margin: 0 10% 0 10%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .page-back {
