@@ -1,5 +1,9 @@
 MicroModal.init({
+  onClose: modal => {
+        $('iframe').attr('src', $('iframe').attr('src'));
+        },// [2]
   awaitCloseAnimation: true
+  // onShow: modal => console.info(`${modal.id} is shown`), // [1]
 });
 
 $("#main-logo").click(function() {
@@ -30,6 +34,51 @@ $("#adventure").click(function() {
     },
     'slow');
 });
+
+// var lastScrollTop = 0;
+// var delta = 5;
+// var navbarHeight = $('.navbar').outerHeight();
+// console.log(navBarHeight);
+//
+// var didScroll;
+// // on scroll, let the interval function know the user has scrolled
+// $(window).scroll(function(event){
+//   didScroll = true;
+// });
+// // run hasScrolled() and reset didScroll status
+// setInterval(function() {
+//   if (didScroll) {
+//     hasScrolled();
+//     didScroll = false;
+//   }
+// }, 250);
+
+// function hasScrolled() {
+//   // do stuff here...
+//   var st = $(this).scrollTop();
+//   console.log(delta)
+//   console.log(lastScrollTop)
+//   console.log(st)
+//   if (Math.abs(lastScrollTop — st) <= delta)
+//     return;
+//
+//       // If current position > last position AND scrolled past navbar...
+//   if (st > lastScrollTop && st > navbarHeight){
+//     // Scroll Down
+//     console.log("scrolled-past")
+//     $('.navbar').removeClass(‘nav-down’).addClass(‘nav-up’);
+//     console.log("scrolled-past")
+//   } else {
+//     // Scroll Up
+//     // If did not scroll past the document (possible on mac)...
+//     if(st + $(window).height() < $(document).height()) {
+//       $('.navbar').removeClass(‘nav-up’).addClass(‘nav-down’);
+//     }
+//   }
+//   lastScrollTop = st;
+//
+// }
+
 
 window.sr = ScrollReveal();
 

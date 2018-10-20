@@ -226,3 +226,14 @@
 .micromodal-slide .modal__container, .micromodal-slide .modal__overlay {
   will-change: transform;
 }
+
+@media only screen and (max-width: 640px) {
+  .modal__container {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+}
