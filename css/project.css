@@ -243,7 +243,8 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  margin: 50px 150px 50px 150px;
+  margin: 30px 150px 30px 150px;
+  line-height: 35px;
 }
 
 .page-small-title {
@@ -251,11 +252,11 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   font-size: 30px;
-  margin: 50px 150px 50px 150px;
+  margin: 30px 150px 30px 150px;
 }
 
 .page-list {
-  margin: 50px 150px 50px 150px;
+  margin: 20px 150px 20px 150px;
   list-style: disc;
 }
 
@@ -264,6 +265,7 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
   font-size: 20px;
+  line-height: 35px;
 }
 
 .large-gif-container {
@@ -351,6 +353,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .next-link {
@@ -366,4 +369,25 @@
 .next-link:hover {
   color: rgb(32, 32, 32);
   transform: translate(0, -3px);
+}
+
+.project-section-title {
+  color: #616161;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+#unmasked-demo {
+  height: 55px;
+  width: 180px;
+  background-color: rgb(71, 178, 255);
+  padding-top: 15px;
+}
+
+#unmasked-demo-link {
+  font-size: 20px;
 }

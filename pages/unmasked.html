@@ -28,6 +28,12 @@
       <h2 class="page-team">with Dorothy Qu and Eric Wang</h2>
       <h3 class="page-tagline">How might we create a annonymous community to discuss mental health issues at Dartmouth?</h3>
     </div>
+
+    <div id="button">
+      <a id="resume-link" href="https://www.figma.com/proto/LI3cU3sIR3GX7roMANaw84bG/Hi-Fis?node-id=274%3A360&scaling=scale-down" target="_blank">
+        <p id="see-resume">Try the prototype</p>
+      </a>
+    </div>
   </div>
 
 
@@ -47,7 +53,7 @@
     </div>
     <!-- Problem -->
     <div class="title-wrapper">
-      <h1 class="section-title">Problem</h1>
+      <h1 class="project-section-title">Problem</h1>
       <img class="section-number" src="../img/1.png" alt="1">
     </div>
 
@@ -55,6 +61,21 @@
       LAB and asked us to design and create a mobile application. The idea behind the app was to create
       a discussion platform in which Dartmouth students would be able to discuss mental health and personal
       issues without fear of judgement.
+    </p>
+
+    <h3 class="page-small-title"> Mental Health by the Numbers</h3>
+    <ul class="page-list">
+      <li class="page-list-item"><b>More than 25%</b> of college students have been diagnosed or treated for
+        a mental health issue in the last year.</li>
+      <li class="page-list-item"><b>40% of students</b> with diagnosable mental health conditions did not receive help.</li>
+      <li class="page-list-item"><b>More than 80%</b> of college students felt overwhelmed by all they had to do in the
+        past year and <b>45%</b> have felt things were hopeless.</li>
+    </ul>
+
+    <p class="page-normal-text"> These statistics, provided by the National Alliance on Mental Health, highlighted a key issue
+      that college students face across the nation, especially on Dartmouth's campus. Creating a discussion platform that allowed
+      students to freely discuss mental health issues was just one step in the right direction, but we believed it was important to help
+      bring mental health to the forefront of conversation on campus and would hopefully lead to more students services and support channels.
     </p>
 
     <h3 class="page-small-title"> Anonymity and Discussion </h3>
@@ -73,7 +94,7 @@
 
     <!-- User Research -->
     <div class="title-wrapper">
-      <h1 class="section-title">User Research</h1>
+      <h1 class="project-section-title">User Research</h1>
       <img class="section-number" src="../img/2.png" alt="2">
     </div>
 
@@ -104,7 +125,7 @@
     <h2 class="page-small-title">Things that we found important</h2>
 
     <ul class="page-list">
-      <li class="page-list-item">Number of likes/upvotes does matter. The majority of our interviewers said that the number of likes/upvotes
+      <li class="page-list-item">The majority of the students said that the number of likes/upvotes
         definitely plays a large part in their social media experience. Many even agree that it often
         creates more pressure and stress.</li>
       <li class="page-list-item">Some of our interviewees mentioned that posting in a Reddit thread or a comment section can be
@@ -169,7 +190,7 @@
     </div>
 
     <div class="title-wrapper">
-      <h1 class="section-title">Ideate</h1>
+      <h1 class="project-section-title">Ideate</h1>
       <img class="section-number" src="../img/3.png" alt="3">
     </div>
 
@@ -177,7 +198,14 @@
     <!-- Ideate -->
 
 
-    <p class="page-small-title"> Sketches and Low-Fis
+    <p class="page-small-title"> Feature Brainstorming and Low-Fis
+    </p>
+
+    <p class="page-normal-text"> After our user research, we went through several brainstorming sessions to come up
+      with ways in which our discussion platform would help solve the user needs.
+    </p>
+
+    <p class="page-small-title"> The Hybrid Comment System
     </p>
 
     <p class="page-normal-text"> One of the biggest challenges during the ideate phase was coming up with a comment section design
@@ -187,9 +215,6 @@
       in most forums because it can be hard to track where the discussion is going.
     </p>
 
-    <p class="page-small-title"> The Hybrid System
-    </p>
-
     <p class="page-normal-text"> We felt that this system we created provided the best of both world. Since each initial comment usually
       responds to the original post in a new direction, we thought that these would be great 'converstaion
       starters'. Responses and comments in these sub-conversations would be grouped together to keep
@@ -197,8 +222,34 @@
       the comment section would encourage discussion while still maintaining some level of organization.
     </p>
 
+    <p class="page-small-title"> Identicons
+    </p>
+
+    <p class="page-normal-text"> We stressed anonymity throughout the design phase, but we feared that total anonymity
+      would discourage users from truly interacting with each other. We wanted users to be able to differentiate themselves
+      from others, but also not label themselves through a username (which could cause issues with privacy or inappropriate names).
+      As a result, we looked into avatars and how platforms like Yik Yak and Slack created user identifies without breaking anonymity.
+      After much research, we came across Identicons, random shapes generated using a hash function from any string of characters.
+      We believed that these identicons could help users connect with each other without clearly labeling a user as a certain avatar.
+      The shapes offered just enough abstraction to help users blend in the crowd for normal users, but also help distinguish users
+      during direct messages.
+    </p>
+
+    <p class="page-small-title"> Reactions
+    </p>
+
+    <p class="page-normal-text"> We knew we wanted to encourage genuine connections through Unmasked, but we questioned
+      the use of "likes" that most social media platforms used as engagement. We brainstormed various ways that users could react,
+      such as "Claps" or "Hearts" or even "Snaps". In our initial designs, we chose to include all three as possible reactions to a posts because
+      we believed that each represented a different kind of support. Additionally, we opted to hide the quantity of each reaction on the post,
+      instead only notifying the original poster of a reaction every few minutes. This way, users could feel the engagement from other users without
+      the anxiety of achieving a number of reactions for each post. Thus, users would feel more comfortable being honest instead of trying to appeal
+      to a broad audience.
+    </p>
+
+
     <div class="title-wrapper">
-      <h1 class="section-title">Prototype</h1>
+      <h1 class="project-section-title">Prototype</h1>
       <img class="section-number" src="../img/4.png" alt="4">
     </div>
 
@@ -245,14 +296,18 @@
 
 
     <p class="page-normal-text "> For example, we quickly found that users felt that three different types of reactions to a post would
-      be excessive and one 'like' button would suffice. Additionally, we were able to get positive feedback
+      be excessive. Although they associated each reaction with a different emotion when interviewed, in practice they felt no difference
+      between the three when using them as well as receiving them on posts.
+    </p>
+    <p class="page-normal-text ">
+      Additionally, we were able to get positive feedback
       on our idea of allowing users to like each other's posts, but not sharing the number of likes to
-      anyone. As a result, the original poster would only be notified occasionally of people generally
-      liking their post or comment.
+      anyone. Our test users felt that this would encourage commenting as the main form of interaction,
+      but also retain the small channels of feedback that we have been accustomed to when posting online.
     </p>
 
     <div class="title-wrapper ">
-      <h1 class="section-title ">Product</h1>
+      <h1 class="project-section-title ">Product</h1>
       <img class="section-number " src="../img/5.png " alt="5 ">
     </div>
 
@@ -282,15 +337,24 @@
       </div>
     </div>
 
+    <!-- <div class="see-more-button" id="unmasked-demo">
+    <p class="project-link-text" id="unmasked-demo-link">Try the demo!</p>
+  </div> -->
 
-
-    <p class="page-normal-text "> We designed with cool and warm colors that promoted comfort and low-stress. For our main fonts, we
+    <p class="page-normal-text"> We designed with cool and warm colors that promoted comfort and low-stress. For our main fonts, we
       decided to use Comfortaa because of its gentle curves in titles, and used Lato for clean and clear
-      readability in actually posts. Additionally, we wanted to use images and icons that contributed
-      to our comforting atmosphere. </p>
+      readability in the posts themselves. Additionally, we wanted to use images and icons that contributed
+      to our comforting atmosphere, seeking inspiration from the outdoors!</p>
+
+    <p class="page-normal-text"> One interesting feature that received overwhelmingly positive feedback was our concept of "Question of the Day"
+      element. We believed that this would be a more encouraging than a simple "Post" section. Our initial idea was that there would be rotating
+      questions of the day that would act as conversation starters for people to engage with the platform. Additionally, the "Share a thought" button
+      was just one example of the attention to tone and language that we took when designing the final mockups for Unmasked.
+
+
 
     <div class="title-wrapper ">
-      <h1 class="section-title ">Reflection</h1>
+      <h1 class="project-section-title ">Reflection</h1>
       <img class="section-number " src="../img/6.png " alt="6 ">
     </div>
 
