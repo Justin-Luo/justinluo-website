@@ -15,7 +15,7 @@
   font-weight: 400;
   font-size: 20px;
   padding-top: 10px;
-  padding-left: 100px;
+  padding-left: 5%;
   display: inline-block;
   transition: color 0.3s, transform 0.3s !important;
 }
@@ -135,12 +135,10 @@
 
 .carousel-img {
   width: 100% !important;
-  height: 100% !important;
 }
 
 .macbook-item {
   width: 800px !important;
-  height: 600px !important;
 }
 
 #side-macbook {
@@ -274,14 +272,17 @@
   flex-flow: row wrap;
 }
 
+#page-link {
+  font-size: 20px;
+}
 #chart-analysis {
   max-widthL
 }
 
 .large-gif {
   display: block;
-  max-width: 1000px;
-  max-height: 500px;
+  max-width: 800px;
+  max-height: 400px;
   width: auto;
   height: auto;
   margin: 25px 25px 25px 25px;
