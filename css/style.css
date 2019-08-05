@@ -141,7 +141,7 @@ nav {
   border-radius: 10px;
   width: 200px;
   text-align: center;
-  margin-left: 20%;
+  margin-left: 0;
   margin-top: 50px;
   font-family: 'Fira Sans', sans-serif;
   color: white;
@@ -174,12 +174,24 @@ nav {
   font-size: 40px;
 }
 
-#bio-text {
+#bio-main {
   color: white;
   margin-top: 10px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+
+#bio-text {
+  color: white;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#bio-bold {
+  font-weight: 600;
 }
 
 .bio-pic {
@@ -505,6 +517,10 @@ nav {
 
 #stic {
   background: rgb(50, 115, 175);
+}
+
+#colorpeace{
+  background: rgb(122, 126, 217);
 }
 
 
