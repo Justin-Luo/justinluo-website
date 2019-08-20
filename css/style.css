@@ -537,6 +537,14 @@ nav {
   margin: 0px 0.5px 0px 3px;
 }
 
+#study-text{
+  margin-bottom: 0px;
+}
+
+#experience-text{
+  margin-top: 0px;
+}
+
 
 .project-link-text {
   color: white;
