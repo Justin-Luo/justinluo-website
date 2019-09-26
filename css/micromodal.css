@@ -121,6 +121,7 @@
 .modal-image-container {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .modal-image {

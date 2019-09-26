@@ -1,9 +1,11 @@
 MicroModal.init({
   onClose: modal => {
-        $('iframe').attr('src', $('iframe').attr('src'));
+        // $(modal).children('iframe').attr('src', $('iframe').attr('src'));
+        $('.modal-video').each(function(index) {
+          $(this).attr('src', $(this).attr('src'));
+        });
         },// [2]
-  awaitCloseAnimation: true
-  // onShow: modal => console.info(`${modal.id} is shown`), // [1]
+  awaitCloseAnimation: true,// [1]
 });
 
 $("#main-logo").click(function() {
@@ -20,12 +22,28 @@ $("#about").click(function() {
     'slow');
 });
 
-$("#portfolio").click(function() {
+$("#xr").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #portfolio-section").offset().top - 100
+      scrollTop: $(" #xr-section").offset().top - 100
     },
     'slow');
 });
+
+$("#mob_web").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #mob_web-section").offset().top - 100
+    },
+    'slow');
+});
+
+$("#misc").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #misc-section").offset().top - 100
+    },
+    'slow');
+});
+
+
 
 
 $("#adventure").click(function() {

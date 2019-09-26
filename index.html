@@ -8,9 +8,10 @@
   <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/micromodal.css">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker"
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,600|Lato:300,400|Permanent+Marker"
     rel="stylesheet">
   <script src="https://use.fontawesome.com/f1cdcabfb0.js"></script>
+
 
 </head>
 <body>
@@ -29,8 +30,15 @@
         <li class="navbar-item">
           <a id="about" class="navbar-heading">ABOUT</a>
         </li>
-        <li class="navbar-item">
-          <a id="portfolio" class="navbar-heading">PORTFOLIO</a>
+        <li class="navbar-item dropdown">
+          <div class="dropdown-area">
+          </div>
+          <div class="dropdown-content">
+            <a id="xr" class="dropdown-link navbar-heading" href="#">AR, VR, AND MR</a>
+            <a id="mob_web" class="dropdown-link navbar-heading" href="#">MOBILE AND WEB</a>
+            <a id="misc" class="dropdown-link navbar-heading" href="#">MISCELLANEOUS</a>
+          </div>
+          <span id="dropdown-btn" class="navbar-heading">PORTFOLIO &#8239; <i class="fa fa-caret-down"></i></span>
         </li>
         <li class="navbar-item">
           <a id="adventure" class="navbar-heading">ADVENTURES</a>
@@ -104,8 +112,8 @@
         <img id="about-outdoor" src="./img/outdoor.png" alt="outdoor">
       </div>
       <div id="about-text">
-        <p id="study-text">I'm a rising senior at Dartmouth College, studying Computer Science and Human Centered Design.</p>
-        <p id="experience-text">Design intern at <span><img id="microsoft-logo" src="./img/microsoft-logo.jpg"></span> and
+        <p id="study-text">I'm a senior at Dartmouth College, studying Computer Science and Human Centered Design.</p>
+        <p id="experience-text">Design intern at <span><img id="microsoft-logo" src="./img/microsoft-logo.jpg"></span>and
           <span><img id="mastercard-logo" src="./img/mastercard-logo.png"></span></p>
         <p>Interests in AR and VR, Interaction and Product Design, Game Development, 3D Modeling, Animation and Film</p>
       </div>
@@ -119,6 +127,11 @@
   </div>
 
   <div class="projects-background">
+
+    <div class="project-section" id="xr-section">
+      <h1 class="project-section-title">AR, VR and MR </h1>
+      <hr class="project-hr">
+    </div>
 
     <!-- ColorPeace -->
 
@@ -142,7 +155,7 @@
           <div class="project-description">
             <p class="tagline"> Coloring therapy...in virtual reality! </p>
             <p>Studies have shown that coloring therapy can be an effective way to decrease stress.
-            How might the immersive qualities of VR augment these effects?</p>
+            How might the immersive qualities of VR improve these effects?</p>
               <div class="see-more-button" id="colorpeace">
               <p class="project-link-text">See more</p>
             </div>
@@ -153,6 +166,88 @@
         </div>
       </div>
     </a>
+    </div>
+
+    <div class="other-projects">
+
+
+      <div class="small-project-card" style="background-image: url(./img/hololens.png)" data-micromodal-trigger="hololens-modal">
+        <div class="background-overlay">
+        </div>
+        <div class="small-text-wrapper">
+
+          <div class="small-text">
+            <h2 class="smaller-title">Hololens Project</h2>
+            <h2 class="small-role">Developer | Designer</h2>
+            <ul class="keys-list" id="small-keys-list">
+              <li class="small-key" id="ar">Augmented Reality</li>
+              <li class="small-key" id="prototyping">Prototyping</li>
+              <li class="small-key" id="react">UNITY</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-project-card" style="background-image: url(./img/gardenvr.png)" data-micromodal-trigger="garden-modal">
+        <div class="background-overlay">
+        </div>
+        <div class="small-text-wrapper">
+
+          <div class="small-text">
+            <h2 class="small-title">GardenVR</h2>
+            <h2 class="small-role">Developer | Designer | 3D Artist</h2>
+            <ul class="keys-list" id="small-keys-list">
+              <li class="small-key" id="product">VIRTUAL REALITY</li>
+              <li class="small-key" id="react">UNITY</li>
+              <li class="small-key" id="illustrator">MAYA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="small-project-card" style="background-image: url(./img/ffb3d.png)" data-micromodal-trigger="ffb-modal">
+        <div class="background-overlay">
+        </div>
+        <div class="small-text-wrapper">
+
+          <div class="small-text">
+            <h2 class="small-title">FFB-3D</h2>
+            <h2 class="small-role">Developer | 3D Artist</h2>
+            <ul class="keys-list" id="small-keys-list">
+              <li class="small-key" id="ar">AUGMENTED REALITY</li>
+              <li class="small-key" id="react">UNITY</li>
+              <li class="small-key" id="illustrator">MAYA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-project-card" style="background-image: url(./img/crunch-logo.png)" data-micromodal-trigger="crunch-modal">
+        <div class="background-overlay">
+        </div>
+        <div class="small-text-wrapper">
+
+          <div class="small-text">
+            <h2 class="small-title">Crunch</h2>
+            <h2 class="small-role">Product Designer</h2>
+            <ul class="keys-list" id="small-keys-list">
+              <li class="small-key" id="ar">Augmented Reality</li>
+              <li class="small-key" id="prototyping">Prototyping</li>
+              <li class="small-key" id="after-effects">After Effects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="project-section" id="mob_web-section">
+      <h1 class="project-section-title">Mobile and Web</h1>
+      <hr class="project-hr"<>
     </div>
 
     <!-- Unmasked -->
@@ -223,8 +318,54 @@
     </a>
     </div>
 
+    <div class="other-projects">
+
+      <div class="small-project-card" style="background-image: url(./img/teams-logo.jpeg)" data-micromodal-trigger="teams-modal">
+        <div class="background-overlay">
+        </div>
+        <div class="small-text-wrapper">
+
+          <div class="smallish-text">
+            <h2 class="small-title">Microsoft Teams</h2>
+            <h2 class="small-role">UX Designer Intern</h2>
+            <ul class="keys-list" id="small-keys-list">
+              <li class="small-key" id="ux">UX</li>
+              <li class="small-key" id="sketch-figma">SKETCH</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-project-card" style="background-image: url(./img/making-logo.png)" data-micromodal-trigger="making-modal">
+        <div class="background-overlay">
+        </div>
+        <div class="small-text-wrapper">
+
+          <div class="small-text">
+            <h2 class="small-title">Making It Stick</h2>
+            <h2 class="small-role">UI/UX Designer</h2>
+            <ul class="keys-list" id="small-keys-list">
+              <li class="small-key" id="ux">UI/UX</li>
+              <li class="small-key" id="illustrator">Illustrator</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="project-section" id="misc-section">
+      <h1 class="project-section-title">Miscellaneous</h1>
+      <hr class="project-hr">
+    </div>
+
+
+
+
+
     <!-- STIC -->
-    <div class="project-wrapper" >
+    <!-- <div class="project-wrapper" >
 
     <a class="project-link" href="./pages/stic.pdf" target="_blank">
 
@@ -247,9 +388,6 @@
             <p class="tagline">"Maximize classroom learning through student feedback"</p>
             <p> Student and Teachers in Collaboration (STIC) is a proposed solution to maximize student learning
               through an immediate feedback channel at Dartmouth.</p>
-            <!-- <a class="project-link" href="./pages/stic.html">
-              <p>See the process</p>
-            </a> -->
                 <div class="see-more-button" id="stic">
 
                 <p class="project-link-text">See more</p>
@@ -263,29 +401,27 @@
       </div>
     </a>
 
-    </div>
+    </div> -->
 
     <div class="other-projects">
 
-
-
-
-      <div class="small-project-card" style="background-image: url(./img/crunch-logo.png)" data-micromodal-trigger="crunch-modal">
+      <div class="small-project-card" style="background-image: url(./img/stic-logo.png)" data-micromodal-trigger="stic-modal" >
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
 
           <div class="small-text">
-            <h2 class="small-title">Crunch</h2>
+            <h2 class="small-title">STIC</h2>
             <h2 class="small-role">Product Designer</h2>
             <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="prototyping">Prototyping</li>
-              <li class="small-key" id="product">Product Design</li>
-              <li class="small-key" id="after-effects">After Effects</li>
+              <li class="small-key" id="product">PRODUCT DESIGN</li>
+              <li class="small-key" id="research">USER RESEARCH</li>
             </ul>
           </div>
         </div>
       </div>
+
+
       <div class="small-project-card" style="background-image: url(./img/handoutpocket-logo.png)" data-micromodal-trigger="handout-modal">
         <div class="background-overlay">
         </div>
@@ -302,38 +438,9 @@
         </div>
       </div>
 
-      <div class="small-project-card" style="background-image: url(./img/making-logo.png)" data-micromodal-trigger="making-modal">
-        <div class="background-overlay">
-        </div>
-        <div class="small-text-wrapper">
-
-          <div class="small-text">
-            <h2 class="small-title">Making It Stick</h2>
-            <h2 class="small-role">UI/UX Designer</h2>
-            <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="ux">UI/UX</li>
-              <li class="small-key" id="illustrator">Illustrator</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
 
-      <div class="small-project-card" style="background-image: url(./img/reactblog-icon.png)" data-micromodal-trigger="react-blog-modal">
-        <div class="background-overlay">
-        </div>
-        <div class="small-text-wrapper">
-          <div class="small-text">
-            <h2 class="small-title">React Blog</h2>
-            <h2 class="small-role">Development Project</h2>
-            <ul class="keys-list" id="small-keys-list">
-              <li class="small-key" id="react">REACT/REDUX</li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="small-project-card" id="seabird" style="background-image: url(./img/seabird-logo.png)" data-micromodal-trigger="seabird-modal">
+      <!-- <div class="small-project-card" id="seabird" style="background-image: url(./img/seabird-logo.png)" data-micromodal-trigger="seabird-modal">
         <div class="background-overlay">
         </div>
         <div class="small-text-wrapper">
@@ -347,7 +454,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- <div class="small-project-card" style="background-image: url(./img/engs12-icon.png)" data-micromodal-trigger="engs12-modal">
         <div class="background-overlay">
@@ -544,15 +651,15 @@
 
   <!-- Other Project Modals -->
 
-  <div class="modal micromodal-slide" id="react-blog-modal" aria-hidden="true">
+  <div class="modal micromodal-slide" id="hololens-modal" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true">
         <header class="modal__header">
           <div class="modal-title">
-            React Blog
+            Hololens Project
           </div>
           <div class="modal-role">
-            Development Project
+            Developer | Designer
           </div>
           <button class="modal__close" data-micromodal-close>
             <i class="fa fa-times" data-micromodal-close aria-hidden="true"></i>
@@ -561,15 +668,158 @@
         <main class="modal__content">
 
           <div class="modal-description">
-            I created a full-stack blog platform using React, Redux, MongoDB, Node.js and Express. The blog supports
-            basic blog functionality, maintains a commenting system, and also requires user authentication.
+            For the Hackathon at Microsoft during my summer internship, I had the amazing opportunity
+             to work on a Hololens project with other interns and full time employees as a developer and designer.
+             As part of the project, I worked on implementing a Hololens feature using Mixed Reality Toolkit (MRTK) and Azure Cognitive Services.
           </div>
           <div class="modal-description">
-            <a class="modal-small-link" target="_blank" href="http://justinluo-redux-blog.surge.sh/">See website</a>
+            Contact me for more information!
+          </div>
+          <div class="modal-image-container">
+            <img class="modal-image" src="./img/hololens-inaction.png" />
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="stic-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <div class="modal-title">
+            STIC
+          </div>
+          <div class="modal-role">
+            Product Designer
+          </div>
+          <button class="modal__close" data-micromodal-close>
+            <i class="fa fa-times" data-micromodal-close aria-hidden="true"></i>
+          </button>
+        </header>
+        <main class="modal__content">
+
+          <div class="modal-description">
+            STIC (Student and Teachers In Collaboration) is a program proposal in which a trained student-intermediary
+            would assist in providing student feedback to faculty. The program aims to improve student learning
+            on campus through improved communication between students, faculty, and the Dartmouth Center for the Advancement of Learning (DCAL).
+          </div>
+          <div class="modal-description">
+            <a class="modal-small-link" target="_blank" href="./pages/stic.pdf">See PDF presentation</a>
           </div>
 
           <div class="modal-image-container">
-            <img class="modal-image" id="macbook" src="./img/small/react-blog.png" />
+            <img class="modal-image" src="./img/stic-pic.png" />
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="teams-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <div class="modal-title">
+            Microsoft Teams
+          </div>
+          <div class="modal-role">
+            UX Designer Intern
+          </div>
+          <button class="modal__close" data-micromodal-close>
+            <i class="fa fa-times" data-micromodal-close aria-hidden="true"></i>
+          </button>
+        </header>
+        <main class="modal__content">
+
+          <div class="modal-description">
+            During the summer of 2019, I interned on the Core UX Team at Teams, specifically on the Messaging team.
+            Over the course of my internship, I lead the design process on auto-translation features, explored a redesign of formatting tools during
+            the compose experience, and reimagined the purpose and organization of channels and chats in Teams.
+          </div>
+
+          <div class="modal-description">
+            Contact me for more information!
+          </div>
+
+          <div class="modal-image-container">
+            <img class="modal-image" src="./img/teams-placeholder.png" />
+          </div>
+
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal micromodal-slide" id="garden-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <div class="modal-title">
+            GardenVR
+          </div>
+          <div class="modal-role">
+            Developer | Designer | 3D Artist
+          </div>
+          <button class="modal__close" data-micromodal-close>
+            <i class="fa fa-times" data-micromodal-close aria-hidden="true"></i>
+          </button>
+        </header>
+        <main class="modal__content">
+
+          <div class="modal-description">
+            GardenVR is a virtual reality application for the Oculus Go made using Oculus SDK, Maya, and Unity.
+            The application is a "build-your-own-world" experience where the user can manipulate various parts of their environment.
+            For our demo, we set the environment in a low-poly Japanese garden with the goal of creating a calming experience.
+            This was my first personal project with VR, and it served as an exploration into user interactions, design, and development of
+            specific features for future projects.
+          </div>
+          <div class="modal-description">
+            <a class="modal-small-link" target="_blank" href="https://docs.google.com/document/d/1xYN6FRxKnEHiBkMH7AuvboYRmMgj3_VOpzFpOWro9bQ/edit">See Project Description</a>
+          </div>
+
+          <div class="modal-image-container">
+            <iframe class="modal-video" width="560" height="315" src="https://www.youtube.com/embed/3XG4N-h9ZTc" allowfullscreen
+              ></iframe>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="ffb-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <div class="modal-title">
+            FFB-3D
+          </div>
+          <div class="modal-role">
+            Developer | 3D Artist
+          </div>
+          <button class="modal__close" data-micromodal-close>
+            <i class="fa fa-times" data-micromodal-close aria-hidden="true"></i>
+          </button>
+        </header>
+        <main class="modal__content">
+
+          <div class="modal-description">
+            FFB-3D is a mobile AR application using Vuforia that expands on the floor guides posted in
+            Berry Library at Dartmouth College. By scanning the floor guide using the device's camera, a 3D model of the
+            floor will project underneath. The user can then hover over specific points of interest in the floor guide's legend,
+            and the application will display an animated route from the floor guide's location to the point of interest.
+          </div>
+          <div class="modal-description">
+            <a class="modal-small-link" target="_blank" href="https://docs.google.com/document/d/1Qn1IYwvSsC0MuMCqDg9NlSuq2uwlw5TXfOJ4DOfgbkw/edit?usp=sharing">See Project Description</a>
+          </div>
+
+          <div class="modal-image-container">
+              <iframe class="modal-video" width="560" height="315" src="https://www.youtube.com/embed/pWHANnu4qA4" allowfullscreen></iframe>
           </div>
         </main>
       </div>
@@ -602,9 +852,7 @@
           </div>
 
           <div class="modal-image-container">
-            <iframe class="modal-video" src="https://www.youtube.com/embed/_1MSaKNloxc" allowfullscreen="allowfullscreen"
-              mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
-              webkitallowfullscreen="webkitallowfullscreen">></iframe>
+            <iframe class="modal-video" src="https://www.youtube.com/embed/_1MSaKNloxc" allowfullscreen></iframe>
           </div>
         </main>
       </div>
@@ -629,7 +877,7 @@
 
           <div class="modal-description">
             Introducing the Handout Pocket, the perfect solution for all those pesky last minute handouts. It attaches
-            to your existing backpack easily and makes sure that your on your way as soon as possible!
+            to your existing backpack easily and makes sure that you're on your way as soon as possible!
           </div>
           <div class="modal-description">
             <a class="modal-small-link" target="_blank" href="./pages/handout-pocket.pdf">See PDF presentation</a>
@@ -675,7 +923,7 @@
     </div>
   </div> -->
 
-  <div class="modal micromodal-slide" id="seabird-modal" aria-hidden="true">
+  <!-- <div class="modal micromodal-slide" id="seabird-modal" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true">
         <header class="modal__header">
@@ -704,7 +952,7 @@
         </main>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="modal micromodal-slide" id="making-modal" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
