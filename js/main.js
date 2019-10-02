@@ -8,6 +8,7 @@ MicroModal.init({
   awaitCloseAnimation: true,// [1]
 });
 
+
 $("#main-logo").click(function() {
   $('html,body').animate({
       scrollTop: 0,
@@ -15,30 +16,40 @@ $("#main-logo").click(function() {
     'slow');
 });
 
+$("#main-logo-sidebar ").click(function() {
+  $('html,body').animate({
+      scrollTop: 0,
+    },
+    'slow');
+    setTimeout(function(){
+      $("#side-bar").css("left", "-15%");
+}, 200);
+});
+
 $("#about").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #about-section").offset().top - 100
+      scrollTop: $(" #about-section").offset().top - 50
     },
     'slow');
 });
 
 $("#xr").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #xr-section").offset().top - 100
+      scrollTop: $(" #xr-section").offset().top - 50
     },
     'slow');
 });
 
 $("#mob_web").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #mob_web-section").offset().top - 100
+      scrollTop: $(" #mob_web-section").offset().top - 50
     },
     'slow');
 });
 
 $("#misc").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #misc-section").offset().top - 100
+      scrollTop: $(" #misc-section").offset().top - 50
     },
     'slow');
 });
@@ -48,10 +59,51 @@ $("#misc").click(function() {
 
 $("#adventure").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #adventure-section").offset().top - 100
+      scrollTop: $(" #adventure-section").offset().top - 50
     },
     'slow');
 });
+
+$("#about-side").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #about-section").offset().top - 50
+    },
+    'slow');
+});
+
+$("#xr-side").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #xr-section").offset().top - 50
+    },
+    'slow');
+});
+
+$("#mob_web-side").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #mob_web-section").offset().top - 50
+    },
+    'slow');
+});
+
+$("#misc-side").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #misc-section").offset().top - 50
+    },
+    'slow');
+});
+
+
+
+
+$("#adventure-side").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #adventure-section").offset().top - 50
+    },
+    'slow');
+});
+
+// console.info("hello");
+
 
 // var lastScrollTop = 0;
 // var delta = 5;
@@ -126,6 +178,8 @@ var rightReveal = {
   duration: 500,
 };
 
+
+
 sr.reveal('.large-project-card', bottomReveal);
 sr.reveal('.bio-text', leftReveal);
 sr.reveal('.contact-wrapper', rightReveal);
@@ -134,3 +188,19 @@ sr.reveal('.about', bottomReveal);
 // sr.reveal('.adventure-photo', bottomReveal);
 sr.reveal('.adventure-title', leftReveal);
 sr.reveal('.adventure-sub', leftReveal);
+
+
+$(window).scroll(function(e) {
+    if ($('html,body').is(':animated')) {
+      // scroll happen by animate
+    } else if (e.originalEvent) {
+        // scroll happen manual scroll
+        if ($(window).scrollTop() > 400) {
+          $("#side-bar").css("left", "2%");
+        } else {
+          $("#side-bar").css("left", "-15%");
+        }
+    } else {
+        // scroll happen by call
+    }
+});
