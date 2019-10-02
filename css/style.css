@@ -1028,11 +1028,11 @@ nav {
     transform: translate(0, -2px) !important;
   }
 
-  #dropdown-btn:hover, #dropdown-btn:active {
+  #dropdown-btn:active {
     cursor: default;
   }
 
-  #dropdown-btn:hover, #dropdown-btn:active ~ .dropdown-content {
+  #dropdown-btn:active ~ .dropdown-content {
     display: block !important;
   }
 
