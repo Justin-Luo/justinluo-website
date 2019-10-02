@@ -8,24 +8,24 @@ MicroModal.init({
   awaitCloseAnimation: true,// [1]
 });
 
-
+// 
 // $("#main-logo").click(function() {
 //   $('html,body').animate({
 //       scrollTop: 0,
 //     },
 //     'slow');
 // });
+// //
+// $("#main-logo-sidebar").click(function() {
+//   $('html,body').animate({
+//       scrollTop: 0,
+//     },
+//     'slow');
+//     setTimeout(function(){
+//       $("#side-bar").css("left", "-15%");
+// }, 200);
+// });
 //
-$("#main-logo-sidebar").click(function() {
-  $('html,body').animate({
-      scrollTop: 0,
-    },
-    'slow');
-    setTimeout(function(){
-      $("#side-bar").css("left", "-15%");
-}, 200);
-});
-
 // $("#about").click(function() {
 //   $('html,body').animate({
 //       scrollTop: $(" #about-section").offset().top - 50
@@ -38,6 +38,7 @@ $("#main-logo-sidebar").click(function() {
 //       scrollTop: $(" #xr-section").offset().top - 50
 //     },
 //     'slow');
+//     console.log("test-normal")
 // });
 //
 // $("#mob_web").click(function() {
@@ -53,8 +54,6 @@ $("#main-logo-sidebar").click(function() {
 //     },
 //     'slow');
 // });
-//
-//
 //
 //
 // $("#adventure").click(function() {
@@ -76,6 +75,8 @@ $("#xr-side").click(function() {
       scrollTop: $(" #xr-section").offset().top - 49
     },
     'slow');
+    console.log("test-side")
+
 });
 
 $("#mob_web-side").click(function() {
