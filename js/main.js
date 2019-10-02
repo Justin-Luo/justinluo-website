@@ -93,8 +93,6 @@ $("#misc-side").click(function() {
 });
 
 
-
-
 $("#adventure-side").click(function() {
   $('html,body').animate({
       scrollTop: $(" #adventure-section").offset().top - 50
