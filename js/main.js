@@ -16,7 +16,7 @@ $("#main-logo").click(function() {
     'slow');
 });
 
-$("#main-logo-sidebar ").click(function() {
+$("#main-logo-sidebar").click(function() {
   $('html,body').animate({
       scrollTop: 0,
     },
@@ -66,28 +66,28 @@ $("#adventure").click(function() {
 
 $("#about-side").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #about-section").offset().top - 50
+      scrollTop: $(" #about-section").offset().top - 49
     },
     'slow');
 });
 
 $("#xr-side").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #xr-section").offset().top - 50
+      scrollTop: $(" #xr-section").offset().top - 49
     },
     'slow');
 });
 
 $("#mob_web-side").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #mob_web-section").offset().top - 50
+      scrollTop: $(" #mob_web-section").offset().top - 49
     },
     'slow');
 });
 
 $("#misc-side").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #misc-section").offset().top - 50
+      scrollTop: $(" #misc-section").offset().top - 49
     },
     'slow');
 });
@@ -95,7 +95,7 @@ $("#misc-side").click(function() {
 
 $("#adventure-side").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #adventure-section").offset().top - 50
+      scrollTop: $(" #adventure-section").offset().top - 49
     },
     'slow');
 });
