@@ -9,13 +9,13 @@ MicroModal.init({
 });
 
 
-$("#main-logo").click(function() {
-  $('html,body').animate({
-      scrollTop: 0,
-    },
-    'slow');
-});
-
+// $("#main-logo").click(function() {
+//   $('html,body').animate({
+//       scrollTop: 0,
+//     },
+//     'slow');
+// });
+//
 $("#main-logo-sidebar").click(function() {
   $('html,body').animate({
       scrollTop: 0,
@@ -26,43 +26,43 @@ $("#main-logo-sidebar").click(function() {
 }, 200);
 });
 
-$("#about").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #about-section").offset().top - 50
-    },
-    'slow');
-});
-
-$("#xr").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #xr-section").offset().top - 50
-    },
-    'slow');
-});
-
-$("#mob_web").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #mob_web-section").offset().top - 50
-    },
-    'slow');
-});
-
-$("#misc").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #misc-section").offset().top - 50
-    },
-    'slow');
-});
-
-
-
-
-$("#adventure").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #adventure-section").offset().top - 50
-    },
-    'slow');
-});
+// $("#about").click(function() {
+//   $('html,body').animate({
+//       scrollTop: $(" #about-section").offset().top - 50
+//     },
+//     'slow');
+// });
+//
+// $("#xr").click(function() {
+//   $('html,body').animate({
+//       scrollTop: $(" #xr-section").offset().top - 50
+//     },
+//     'slow');
+// });
+//
+// $("#mob_web").click(function() {
+//   $('html,body').animate({
+//       scrollTop: $(" #mob_web-section").offset().top - 50
+//     },
+//     'slow');
+// });
+//
+// $("#misc").click(function() {
+//   $('html,body').animate({
+//       scrollTop: $(" #misc-section").offset().top - 50
+//     },
+//     'slow');
+// });
+//
+//
+//
+//
+// $("#adventure").click(function() {
+//   $('html,body').animate({
+//       scrollTop: $(" #adventure-section").offset().top - 50
+//     },
+//     'slow');
+// });
 
 $("#about-side").click(function() {
   $('html,body').animate({
