@@ -925,93 +925,20 @@ nav {
   margin: 0px;
 }
 
-@media only screen and (max-width: 640px) {
-  nav {
-    display: block;
+@media only screen and (max-width: 1320px) {
+  #dropdown-btn:active {
+    cursor: default;
   }
 
-  .side-bar {
-    display: none;
+  #dropdown-btn:active ~ .dropdown-content {
+    display: block !important;
   }
-
-
-  .bio-box {
-    padding: 80px 20px 10px 20px;
-  }
-
-  .bio-text{
-    width: 100%;
-  }
-
-  #bio-intro {
-    font-size: 60px;
-  }
-
-  #bio-description {
-    font-size: 30px;
-  }
-
-  #resume-button {
-    margin: auto;
-    margin-top: 30px;
-  }
-
-
-  .bio-box-wrapper {
-    padding: 20px;
-    flex-flow: column;
-  }
-
-  .contact-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row;
-    padding-top: 20px;
-  }
-
-  .contact-link {
-    padding: 10px;
-  }
-  nav {
-    position: fixed;
-    background-color: white;
-    z-index: 2;
-    border-bottom: 2px solid #e4e4e4;
-  }
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    padding: 0px;
-    justify-content: space-around;
-    list-style: none;
-    z-index: 1;
-    margin: auto;
-    background-position: white;
-  }
-
 
   #nav-logo {
     max-width: 40px;
   }
 
-  .navbar-item {
-    margin: auto;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
-  .navbar-item-logo {
-    position: relative;
-    margin: auto;
-    top: 0px;
-    left: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-  }
 
   .navbar-heading {
     display: inline-block;
@@ -1028,12 +955,103 @@ nav {
     transform: translate(0, -2px) !important;
   }
 
-  #dropdown-btn:active {
-    cursor: default;
+  nav {
+    display: block;
   }
 
-  #dropdown-btn:active ~ .dropdown-content {
-    display: block !important;
+  .side-bar {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    border-bottom: 2px solid #e4e4e4;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    z-index: 1;
+    margin: auto;
+    background-position: white;
+  }
+
+  .bio-box {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .bio-text{
+    width: 100%;
+  }
+
+  #bio-intro {
+    font-size: 60px;
+  }
+
+  #bio-description {
+    font-size: 30px;
+  }
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .bio-box {
+    padding-bottom: 10px;
+  }
+  #resume-button {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+
+  .bio-box-wrapper {
+    padding: 20px;
+    flex-flow: column;
+  }
+
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    padding-top: 20px;
+  }
+
+  .contact-link {
+    padding: 10px;
+  }
+
+  .navbar-item-logo {
+    position: relative;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-item {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar {
+    justify-content: space-around;
+    padding: 0px;
   }
 
 
@@ -1051,9 +1069,7 @@ nav {
     margin-top: 10px;
   }
 
-  #about-outdoor {
-    width: 50%;
-  }
+
   #about-text {
     padding-left: 0px;
     margin: auto;

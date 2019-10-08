@@ -1,11 +1,3 @@
-function checkPosition() {
-    if (window.matchMedia('(max-width: 640)').matches) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 MicroModal.init({
   onClose: modal => {
         // $(modal).children('iframe').attr('src', $('iframe').attr('src'));
