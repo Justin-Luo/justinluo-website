@@ -211,6 +211,13 @@ nav {
   width: 70%;
 }
 
+.contact-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row;
+  margin-top: 40px;
+}
+
 #resume-link {
   text-decoration: none;
   color: white;
@@ -227,10 +234,12 @@ nav {
   width: 200px;
   text-align: center;
   margin-left: 0;
-  margin-top: 50px;
+  margin-top: 5px;
+  height: 49px;
   font-family: 'Fira Sans', sans-serif;
   color: white;
   transition: background-color 0.3s;
+  margin-right: 30px;
 }
 
 #resume-button:hover {
@@ -257,6 +266,12 @@ nav {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
   font-size: 40px;
+}
+
+#links {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
 }
 
 #bio-main {
@@ -298,7 +313,7 @@ nav {
 /* Contact Me */
 
 .contact-link {
-  padding: 40px 50px 20px 50px;
+  padding: 0px 30px 0px 30px;
   text-align: center;
 }
 
@@ -627,7 +642,7 @@ nav {
 }
 
 #unmasked {
-  background: rgb(0, 223, 156);
+  background: rgb(39, 100, 103);
 }
 
 #stic {
@@ -1003,32 +1018,64 @@ nav {
 
 }
 
+@media only screen and (max-width: 375px) {
+  #bio-intro {
+    font-size: 56px;
+  }
+
+  #links {
+    justify-content: space-between !important;
+    padding-top: 30px !important;
+    width: 80% !important;
+  }
+
+  #nav-logo {
+    max-width: 35px !important;
+  }
+
+  .navbar {
+    padding-right: 5px !important;
+  }
+
+  .navbar-item-logo {
+    width: 35px !important;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 520px) {
+  .contact-wrapper {
+    flex-flow: row wrap;
+  }
+
+  #links {
+    justify-content: space-between !important;
+    padding-top: 20px;
+  }
+}
+
+
 @media only screen and (max-width: 640px) {
+
+  #links {
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  .contact-link {
+    padding: 0px;
+  }
 
   .bio-box {
     padding-bottom: 10px;
-  }
-  #resume-button {
-    margin: auto;
-    margin-top: 30px;
   }
 
 
   .bio-box-wrapper {
     padding: 20px;
-    flex-flow: column;
-  }
-
-
-  .contact-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row;
-    padding-top: 20px;
-  }
-
-  .contact-link {
-    padding: 10px;
+    max-width: 90%;
   }
 
   .navbar-item-logo {
