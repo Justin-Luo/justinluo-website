@@ -1063,6 +1063,17 @@ nav {
 
 
 @media only screen and (max-width: 520px) {
+  #bio-description {
+    font-size: 28px;
+  }
+
+  .bio-box-wrapper {
+    padding-top: 0px !important;
+  }
+
+  #resume-button {
+    margin-top: 30px;
+  }
   /* .contact-wrapper {
     flex-flow: row wrap;
   }
