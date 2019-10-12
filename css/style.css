@@ -211,12 +211,24 @@ nav {
   width: 70%;
 }
 
-.contact-wrapper {
+/* .contact-wrapper {
   display: flex;
   justify-content: flex-start;
   flex-flow: row;
   margin-top: 40px;
+} */
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  padding-top: 20px;
 }
+
+.contact-link {
+  padding: 10px;
+}
+
 
 #resume-link {
   text-decoration: none;
@@ -234,7 +246,7 @@ nav {
   width: 200px;
   text-align: center;
   margin-left: 0;
-  margin-top: 5px;
+  margin-top: 50px;
   height: 49px;
   font-family: 'Fira Sans', sans-serif;
   color: white;
@@ -268,11 +280,11 @@ nav {
   font-size: 40px;
 }
 
-#links {
+/* #links {
   display: flex;
   flex-flow: wrap row;
   justify-content: flex-start;
-}
+} */
 
 #bio-main {
   color: white;
@@ -312,8 +324,13 @@ nav {
 
 /* Contact Me */
 
-.contact-link {
+/* .contact-link {
   padding: 0px 30px 0px 30px;
+  text-align: center;
+} */
+
+.contact-link {
+  padding: 40px 50px 20px 50px;
   text-align: center;
 }
 
@@ -1018,16 +1035,16 @@ nav {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 385px) {
   #bio-intro {
     font-size: 56px;
   }
 
-  #links {
+  /* #links {
     justify-content: space-between !important;
     padding-top: 30px !important;
     width: 80% !important;
-  }
+  } */
 
   #nav-logo {
     max-width: 35px !important;
@@ -1046,19 +1063,19 @@ nav {
 
 
 @media only screen and (max-width: 520px) {
-  .contact-wrapper {
+  /* .contact-wrapper {
     flex-flow: row wrap;
   }
 
   #links {
     justify-content: space-between !important;
     padding-top: 20px;
-  }
+  } */
 }
 
 
 @media only screen and (max-width: 640px) {
-
+/*
   #links {
     justify-content: space-around;
     width: 80%;
@@ -1066,7 +1083,18 @@ nav {
 
   .contact-link {
     padding: 0px;
-  }
+  } */
+
+  .contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  padding-top: 20px;
+}
+
+.contact-link {
+  padding: 10px;
+}
 
   .bio-box {
     padding-bottom: 10px;
@@ -1075,7 +1103,10 @@ nav {
 
   .bio-box-wrapper {
     padding: 20px;
-    max-width: 90%;
+    /* max-width: 90%; */
+    flex-flow: column;
+
+
   }
 
   .navbar-item-logo {
