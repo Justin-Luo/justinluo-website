@@ -222,7 +222,6 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-flow: column;
-  padding-top: 20px;
 }
 
 .contact-link {
