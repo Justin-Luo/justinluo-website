@@ -723,7 +723,7 @@ nav {
   border-radius: 10px;
 }
 
-div.small-project-card, div.small-project-card > * {
+div.small-project-card > * {
     pointer-events: none;
 }
 
