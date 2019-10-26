@@ -723,6 +723,11 @@ nav {
   border-radius: 10px;
 }
 
+div.small-project-card, div.small-project-card > * {
+    // CSS Property
+    pointer-events: none;
+}
+
 .small-project-card {
   transition: transform 0.3s ease-out !important;
 
