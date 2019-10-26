@@ -727,6 +727,10 @@ div.small-project-card > * {
     pointer-events: none;
 }
 
+div.large-project-card, div.large-project-card > * {
+    pointer-events: none;
+}
+
 .small-project-card {
   transition: transform 0.3s ease-out !important;
 
