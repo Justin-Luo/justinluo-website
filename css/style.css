@@ -695,10 +695,10 @@ nav {
 }
 
 #microsoft-logo {
-  max-width: 150px;
+  max-width: 100px;
   top: 8px;
   position: relative;
-  margin: 0px 0.5px 0px 3px;
+  margin: 0px 0.5px 4px 3px;
 }
 
 #study-text{
