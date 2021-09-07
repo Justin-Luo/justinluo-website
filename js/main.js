@@ -65,6 +65,24 @@ $("#misc").click(function() {
 
 });
 
+$("#research").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #research-section").offset().top - 100
+    },
+    'slow');
+    return false;
+
+});
+
+$("#portfolio").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #portfolio-section").offset().top - 100
+    },
+    'slow');
+    return false;
+
+});
+
 
 $("#adventure").click(function() {
   $('html,body').animate({
@@ -83,33 +101,21 @@ $("#about-side").click(function() {
     return false;
 });
 
-$("#xr-side").click(function() {
+$("#research-side").click(function() {
   $('html,body').animate({
-      scrollTop: $(" #xr-section").offset().top - 50
+      scrollTop: $(" #research-section").offset().top - 50
+    },
+    'slow');
+    return false;
+
+});$("#portfolio-side").click(function() {
+  $('html,body').animate({
+      scrollTop: $(" #portfolio-section").offset().top - 50
     },
     'slow');
     return false;
 
 });
-
-$("#mob_web-side").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #mob_web-section").offset().top - 50
-    },
-    'slow');
-    return false;
-
-});
-
-$("#misc-side").click(function() {
-  $('html,body').animate({
-      scrollTop: $(" #misc-section").offset().top - 50
-    },
-    'slow');
-    return false;
-
-});
-
 
 $("#adventure-side").click(function() {
   $('html,body').animate({
@@ -243,7 +249,6 @@ sr.reveal('.about', bottomReveal);
 sr.reveal('.adventure-title', leftReveal);
 sr.reveal('.adventure-sub', leftReveal);
 
-
 $(window).scroll(function(e) {
     if ($('html,body').is(':animated')) {
       // scroll happen by animate
@@ -254,7 +259,9 @@ $(window).scroll(function(e) {
         } else {
           $("#side-bar").css("left", "-15%");
         }
+
     } else {
         // scroll happen by call
     }
 });
+        console.log("hello");
